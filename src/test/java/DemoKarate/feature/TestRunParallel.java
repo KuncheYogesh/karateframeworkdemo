@@ -26,6 +26,10 @@ public class TestRunParallel {
 
     }
 
+    /**
+     * generateReportMethod
+     * @param karateOutputPath
+     */
     public static void generateReport(String karateOutputPath){
 
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
