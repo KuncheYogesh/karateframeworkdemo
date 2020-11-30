@@ -22,7 +22,7 @@ Feature: Generate random string function
     And request { name: '#(string)', job: 'Automation', company: 'TEK' }
     And param delay = 2
     When method post
-    Then status 20
+    Then status 201
     Then print 'Response ID', response
     * def responseID = response.id
     * print 'Response ID generated for request is ',responseID
