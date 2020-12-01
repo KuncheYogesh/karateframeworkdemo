@@ -1,4 +1,4 @@
-@ignore
+
 Feature: Check users list and Update the first user name with the last user
 
   Background:
