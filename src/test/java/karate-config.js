@@ -10,6 +10,5 @@ function fn(){
    else if(env == 'Production'){
          config.sourceurl = 'https://prod.in/api/users/3';
          }
-
    return config;
 }
