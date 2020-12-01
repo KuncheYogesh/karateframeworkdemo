@@ -12,8 +12,8 @@
   <body>
     <div id="visualization"></div>
     <script>
-var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"generateRandomString[1:6]","start":2079,"end":6171,"title":"generateRandomString[1:6] 05:30:02.079-05:30:06.171 Using string in request"}]);
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"},{"id":2,"content":"ForkJoinPool-1-worker-2"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"generateRandomString[1:6]","start":1184,"end":4435,"title":"generateRandomString[1:6] 05:30:01.184-05:30:04.435 Using string in request"},{"id":2,"group":2,"content":"UserDetails2[1:13]","start":1184,"end":2333,"title":"UserDetails2[1:13] 05:30:01.184-05:30:02.333 Get the userdetails of id 3"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });
