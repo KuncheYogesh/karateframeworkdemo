@@ -88,8 +88,8 @@
                     <compilerArgument>-Werror</compilerArgument>
                 </configuration>
             </plugin>
-         
-           <!-- <plugin>
+
+           <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
                 <version>${cucumber.reporting.version}</version>
@@ -111,7 +111,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
 
