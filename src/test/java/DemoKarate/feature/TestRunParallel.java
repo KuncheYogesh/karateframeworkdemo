@@ -25,6 +25,7 @@ public class TestRunParallel {
         Results results = Runner.path("classpath:DemoKarate").tags("~@ignore").parallel(5);
         generateReport(results.getReportDir());
         //Assert.assertEquals(results.getFailCount(), results.getErrorMessages());
+        assertEquals(0, results.getFailCount(), results.getErrorMessages());
 
     }
 

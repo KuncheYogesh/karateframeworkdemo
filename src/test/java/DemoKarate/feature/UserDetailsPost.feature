@@ -1,4 +1,4 @@
-@ignore
+
 Feature: Post user details
 
   Background:

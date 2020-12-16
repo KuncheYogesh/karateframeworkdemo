@@ -20,4 +20,7 @@ Feature: Check users list and Update the first user name with the last user
     * def firstname = finalresult.response.data.first_name
     Then print 'Firstname Userdetails id 2 is',firstname
 
+    #* def response = { success: true }
+    #* if (response.success) karate.abort()
 
+    #* print 'this will not be printed'
