@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
@@ -22,6 +24,7 @@ public class TestRunParallel {
     public void testParallel() {
         Results results = Runner.path("classpath:DemoKarate").tags("~@ignore").parallel(5);
         generateReport(results.getReportDir());
+        //Assert.assertEquals(results.getFailCount(), results.getErrorMessages());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
 
     }
