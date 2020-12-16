@@ -64,7 +64,7 @@
             <artifactId>ojdbc8</artifactId>
             <version>19.7.0.0</version>
         </dependency>
-        
+
     </dependencies>
     <build>
         <testResources>
@@ -100,7 +100,7 @@
                     <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
             </plugin>
-            <plugin>
+           <!-- <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
                 <version>${cucumber.reporting.version}</version>
@@ -122,7 +122,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
