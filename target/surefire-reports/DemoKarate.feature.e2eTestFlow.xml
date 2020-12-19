@@ -1,5 +1,5 @@
-<testsuite failures="0" name="DemoKarate/feature/e2eTestFlow.feature" skipped="0" tests="1" time="7.23622">
-  <testcase classname="DemoKarate.feature.e2eTestFlow" name="User details" time="7.23622">
+<testsuite failures="0" name="DemoKarate/feature/e2eTestFlow.feature" skipped="0" tests="1" time="3.790919">
+  <testcase classname="DemoKarate.feature.e2eTestFlow" name="User details" time="3.790919">
     <system-out>* url 'https://reqres.in' ................................................. passed
 * def requestpayload = read('../utils/Userdetails.json') .................. passed
 * header Content-Type = 'application/json' ................................ passed

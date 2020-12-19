@@ -1,4 +1,4 @@
-11:56:50.808 Testsuite executed in Environment  
+16:36:09.583 Testsuite executed in Environment  
 11:56:51.164 [print] Random string generated DuiDb
 11:56:52.882 request:
 1 > POST https://reqres.in/api/users?delay=2

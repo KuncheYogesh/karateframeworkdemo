@@ -1,34 +1,45 @@
-11:56:50.808 Testsuite executed in Environment  
-11:56:52.881 request:
-1 > GET https://reqres.in/api/users?page=2
+16:36:09.569 Testsuite executed in Environment  
+16:36:09.820 [print] Random string generated WZqhH
+16:36:10.881 request:
+1 > POST https://reqres.in/api/users?delay=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Type: application/json
+1 > Content-Length: 51
+1 > Content-Type: application/json; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"WZqhH","job":"Automation","company":"TEK"}
 
-11:56:54.478 response time in milliseconds: 1595.91
-1 < 200
-1 < Age: 7148
-1 < CF-Cache-Status: HIT
-1 < CF-RAY: 602e933e8b121a2e-SIN
-1 < Cache-Control: max-age=14400
+16:36:13.836 response time in milliseconds: 2954.61
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6040a7081dbbde6e-BOM
 1 < Connection: keep-alive
+1 < Content-Length: 101
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 17 Dec 2020 06:26:53 GMT
+1 < Date: Sat, 19 Dec 2020 11:06:10 GMT
+1 < Etag: W/"65-tW5EVyxokmxkg0X02llkINJ8oqU"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=kI1fcTHoukgBkYVYFZIWDZmbuDzgKBoGxfE5yOWXwsm%2B3kJhYkCXHuO2wHcTMZOr8sKemYA1qp%2FfnuySmHrBx54%2FizJI%2BEu4Fuc%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=cDPsKs2ZAV%2BrsPV4qVx4Y5%2B2JheocNK80a1YZIhQsIudZmZEjG2yA4jTXOxYxN%2FCcFn3AP0qdgCT78tkIxkFTtwfyy%2FxntSvDi0%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d7b8ef37abd6ce819613de6e6d8c79fd11608186413; expires=Sat, 16-Jan-21 06:26:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 < Transfer-Encoding: chunked
-1 < Vary: Accept-Encoding
-1 < access-control-allow-origin: *
-1 < cf-request-id: 0710fa5b1200001a2eb21c0000000001
-1 < etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
-1 < via: 1.1 vegur
-1 < x-powered-by: Express
-{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+1 < Set-Cookie: __cfduid=d4e200b36e0fcf2e50cd487983590b43e1608375968; expires=Mon, 18-Jan-21 11:06:08 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 071c46b90d0000de6edab6c000000001
+{"name":"WZqhH","job":"Automation","company":"TEK","id":"631","createdAt":"2020-12-19T11:06:10.296Z"}
+
+16:36:13.840 [print] Response ID {
+  "createdAt": "2020-12-19T11:06:10.296Z",
+  "name": "WZqhH",
+  "company": "TEK",
+  "id": "631",
+  "job": "Automation"
+}
+
+16:36:13.843 [print] Response ID generated for request is  631
+ame":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 
 11:56:54.496 [print] List of UserDetails [
   {

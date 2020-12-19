@@ -1,5 +1,5 @@
-11:56:50.810 Testsuite executed in Environment  
-17:58:45.252 request:
+16:36:09.584 Testsuite executed in Environment  
+16:36:10.881 request:
 1 > GET https://reqres.in/api/users?page=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -7,30 +7,30 @@
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 
-17:58:46.180 response time in milliseconds: 923.41
+16:36:11.522 response time in milliseconds: 636.79
 1 < 200
-1 < Age: 111
+1 < Access-Control-Allow-Origin: *
+1 < Age: 208
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 602867f45bb21a62-SIN
+1 < CF-RAY: 6040a7082a42de72-BOM
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Wed, 16 Dec 2020 12:28:46 GMT
+1 < Date: Sat, 19 Dec 2020 11:06:08 GMT
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=0FbUmMnTP5lg9FZRgxhlyAIpzaNCvdlyAAmo%2F1nskkpTg4hTWmhT4td9h%2BhHz%2BRRTx%2FZ7%2B05ovSg7%2FA0l69tNqd9Q573Og9%2FX0M%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=iftGd0f9wxkNGrhcv9nb3hx8NAmwgb3%2FoKkLi7MG%2Fmu1lrsR6Q96DjLkGK%2BVZ9JrJ%2FiAGR%2BKc2ObS6ag26d99l5QjMm07YY6etA%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d320877ae2ca5d4e79f0e184f4a6440391608121726; expires=Fri, 15-Jan-21 12:28:46 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=d5f76c0f03cc363a72fcddeae7657e5671608375968; expires=Mon, 18-Jan-21 11:06:08 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
-1 < access-control-allow-origin: *
-1 < cf-request-id: 070d1f4cb500001a62380ad000000001
-1 < etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
-1 < via: 1.1 vegur
-1 < x-powered-by: Express
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 071c46b9180000de7263bc1000000001
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 
-17:58:46.220 [print] List of UserDetails [
+16:36:11.542 [print] List of UserDetails [
   {
     "last_name": "Lawson",
     "id": 7,
@@ -75,7 +75,7 @@
   }
 ]
 
-17:58:46.332 [print] My userDetails {
+16:36:11.583 [print] My userDetails {
   "last_name": "Funke",
   "id": 9,
   "avatar": "https://reqres.in/img/faces/9-image.jpg",
@@ -83,107 +83,109 @@
   "email": "tobias.funke@reqres.in"
 }
 
-17:58:46.355 [print] My Firstname Tobias
-17:58:46.371 request:
+16:36:11.597 [print] My Firstname Tobias
+16:36:11.604 request:
 2 > POST https://reqres.in/api/users
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
 2 > Content-Length: 36
 2 > Content-Type: application/json; charset=UTF-8
-2 > Cookie: __cfduid=d320877ae2ca5d4e79f0e184f4a6440391608121726
+2 > Cookie: __cfduid=d5f76c0f03cc363a72fcddeae7657e5671608375968
 2 > Host: reqres.in
 2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 {"name":"yogesh","job":"Automation"}
 
-17:58:47.025 response time in milliseconds: 653.19
+16:36:12.326 response time in milliseconds: 720.87
 2 < 201
-2 < Access-Control-Allow-Origin: *
 2 < CF-Cache-Status: DYNAMIC
-2 < CF-RAY: 602867f74821d9c0-SIN
+2 < CF-RAY: 6040a70c5cdec052-MRS
 2 < Connection: keep-alive
-2 < Content-Length: 86
+2 < Content-Length: 85
 2 < Content-Type: application/json; charset=utf-8
-2 < Date: Wed, 16 Dec 2020 12:28:47 GMT
-2 < Etag: W/"56-AeeJwLG/60sro382irlItbMq6CY"
+2 < Date: Sat, 19 Dec 2020 11:06:08 GMT
 2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 2 < NEL: {"report_to":"cf-nel","max_age":604800}
-2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=pCqYSZgVnRfzLs2XqJNkeGYx5qQBo3erMHpDnWaPh25rEZ6zy6CEGl3QlHByJDQR964pN7%2B7MbifP7sMU3SaG5u7ii1lr%2BVQaZM%3D"}],"group":"cf-nel","max_age":604800}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=IKsp2D7bzsAbJ4Z%2FkAsrnHH4drNf8zBVVyxiXV2MaeSpL%2BE0A0zTCLitP9RcXMu9BagTOjg8Zf0CM5J%2FH8MxM0rdm0yaEgtw8J4%3D"}],"group":"cf-nel","max_age":604800}
 2 < Server: cloudflare
-2 < Via: 1.1 vegur
-2 < X-Powered-By: Express
-2 < cf-request-id: 070d1f4e920000d9c0ba943000000001
-{"name":"yogesh","job":"Automation","id":"854","createdAt":"2020-12-16T12:28:46.913Z"}
+2 < access-control-allow-origin: *
+2 < cf-request-id: 071c46bbb50000c05222875000000001
+2 < etag: W/"55-95+fkGrc37rXmnoA3SSx17tqtDs"
+2 < via: 1.1 vegur
+2 < x-powered-by: Express
+{"name":"yogesh","job":"Automation","id":"35","createdAt":"2020-12-19T11:06:08.777Z"}
 
-17:58:47.032 [print] Created User details {
-  "createdAt": "2020-12-16T12:28:46.913Z",
+16:36:12.330 [print] Created User details {
+  "createdAt": "2020-12-19T11:06:08.777Z",
   "name": "yogesh",
-  "id": "854",
+  "id": "35",
   "job": "Automation"
 }
 
-17:58:47.048 [print] ID created for New user 854
-17:58:47.057 request:
-3 > PUT https://reqres.in/api/users/854
+16:36:12.341 [print] ID created for New user 35
+16:36:12.348 request:
+3 > PUT https://reqres.in/api/users/35
 3 > Accept-Encoding: gzip,deflate
 3 > Connection: Keep-Alive
 3 > Content-Length: 45
 3 > Content-Type: application/json; charset=UTF-8
-3 > Cookie: __cfduid=d320877ae2ca5d4e79f0e184f4a6440391608121726
+3 > Cookie: __cfduid=d5f76c0f03cc363a72fcddeae7657e5671608375968
 3 > Host: reqres.in
 3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 {"name":"yogesh","job":"AutomationKarateAPI"}
 
-17:58:47.713 response time in milliseconds: 654.04
+16:36:13.004 response time in milliseconds: 655.54
 3 < 200
 3 < Access-Control-Allow-Origin: *
 3 < CF-Cache-Status: DYNAMIC
-3 < CF-RAY: 602867fb99c7cc10-SIN
+3 < CF-RAY: 6040a7108df00fd2-MRS
 3 < Connection: keep-alive
 3 < Content-Type: application/json; charset=utf-8
-3 < Date: Wed, 16 Dec 2020 12:28:47 GMT
-3 < Etag: W/"54-8MTsMeEanfyO2z5fUrasYs+Cn44"
+3 < Date: Sat, 19 Dec 2020 11:06:09 GMT
+3 < Etag: W/"54-tAe0deoTZsXlV7RB6P8YpsPXEJA"
 3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 3 < NEL: {"report_to":"cf-nel","max_age":604800}
-3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=QldSy%2FNC9Cu%2FzF8fTkgr6wSa1SUUKikb8D8KIl8v4zwaRbiJgtlr1eLxc2vESbRaxMeprH649oUWUWVbTn%2FpPOcpp4b9owyEFAc%3D"}],"group":"cf-nel","max_age":604800}
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=RWp%2BZKmDB5G8s4Lfr0HNaVwdxqIB%2FEqDu58%2Fv1qFGjFfy%2F2HpjETor1eQnpV3smTtigE5Gbv2fqrRYWNLujsYYd%2BdxhBF9EjuDM%3D"}],"group":"cf-nel","max_age":604800}
 3 < Server: cloudflare
 3 < Transfer-Encoding: chunked
 3 < Vary: Accept-Encoding
 3 < Via: 1.1 vegur
 3 < X-Powered-By: Express
-3 < cf-request-id: 070d1f51400000cc104397f000000001
-{"name":"yogesh","job":"AutomationKarateAPI","updatedAt":"2020-12-16T12:28:47.602Z"}
+3 < cf-request-id: 071c46be5100000fd2bc325000000001
+{"name":"yogesh","job":"AutomationKarateAPI","updatedAt":"2020-12-19T11:06:09.446Z"}
 
-17:58:47.717 [print] Updated Job details {
+16:36:13.007 [print] Updated Job details {
   "name": "yogesh",
   "job": "AutomationKarateAPI",
-  "updatedAt": "2020-12-16T12:28:47.602Z"
+  "updatedAt": "2020-12-19T11:06:09.446Z"
 }
 
-17:58:47.720 request:
-4 > DELETE https://reqres.in/api/users/854
+16:36:13.009 request:
+4 > DELETE https://reqres.in/api/users/35
 4 > Accept-Encoding: gzip,deflate
 4 > Connection: Keep-Alive
 4 > Content-Length: 84
 4 > Content-Type: application/json; charset=UTF-8
-4 > Cookie: __cfduid=d320877ae2ca5d4e79f0e184f4a6440391608121726
+4 > Cookie: __cfduid=d5f76c0f03cc363a72fcddeae7657e5671608375968
 4 > Host: reqres.in
 4 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-{"name":"yogesh","job":"AutomationKarateAPI","updatedAt":"2020-12-16T12:28:47.602Z"}
+{"name":"yogesh","job":"AutomationKarateAPI","updatedAt":"2020-12-19T11:06:09.446Z"}
 
-17:58:48.385 response time in milliseconds: 664.68
+16:36:13.495 response time in milliseconds: 485.15
 4 < 204
 4 < Access-Control-Allow-Origin: *
 4 < CF-Cache-Status: DYNAMIC
-4 < CF-RAY: 602867ffbe58dd02-SIN
+4 < CF-RAY: 6040a7128ff5de2d-BOM
 4 < Connection: keep-alive
 4 < Content-Length: 0
-4 < Date: Wed, 16 Dec 2020 12:28:48 GMT
+4 < Date: Sat, 19 Dec 2020 11:06:10 GMT
 4 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
 4 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 4 < NEL: {"report_to":"cf-nel","max_age":604800}
-4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=xBcaeaH%2FeWogWfbCoNCh5Euo57zbDMKRj17O7YwZ7KC%2Bhw6SdJI4fdfEHTOtUgcuoyOOdUlYv%2FXkNmLXlTT3raLqwbsx4r1hIDY%3D"}],"group":"cf-nel","max_age":604800}
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=TMHaG9OOeyHPkfR0MdV5sR6GxRDt48JKjIX2QYYz%2FZLeIFM2TdspQlionJ3DQAvbFaaQUx3CVL6YRayTS6JRV3upK7cCHPV%2F%2Bi8%3D"}],"group":"cf-nel","max_age":604800}
 4 < Server: cloudflare
 4 < Via: 1.1 vegur
 4 < X-Powered-By: Express
-4 < cf-request-id: 070d1f53d10000dd02ad8d8000000001
+4 < cf-request-id: 071c46bf940000de2d69867000000001
+
+1
 
