@@ -1,0 +1,79 @@
+11:56:50.808 Testsuite executed in Environment  
+11:56:51.164 [print] Random string generated DuiDb
+11:56:52.882 request:
+1 > POST https://reqres.in/api/users?delay=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 51
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"DuiDb","job":"Automation","company":"TEK"}
+
+11:56:56.171 response time in milliseconds: 3287.48
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 602e933acb89c363-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 101
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 17 Dec 2020 06:26:55 GMT
+1 < Etag: W/"65-wuaRYINdOdN1sW7wiVTMd4qb0EI"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Xn1MbdwerU7y7DBHHQZCuWFenw2%2BLw2xJnEYi8oHHRPqFhuhvzzdDq62aDGFMaVQZtAjUT6W3CnUBd%2BXvb76o9vjstDg4Y39Wig%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d0854e45407cbcda47af1f540a89fa8df1608186413; expires=Sat, 16-Jan-21 06:26:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0710fa58c00000c3635bbed000000001
+{"name":"DuiDb","job":"Automation","company":"TEK","id":"622","createdAt":"2020-12-17T06:26:55.560Z"}
+
+11:56:56.178 [print] Response ID {
+  "createdAt": "2020-12-17T06:26:55.560Z",
+  "name": "DuiDb",
+  "company": "TEK",
+  "id": "622",
+  "job": "Automation"
+}
+
+11:56:56.186 [print] Response ID generated for request is  622
+11:56:56.331 Testsuite executed in Environment  
+11:56:56.336 request:
+1 > POST https://reqres.in/api/users?delay=5
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 36
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"yogesh","job":"Automation"}
+
+11:57:02.086 response time in milliseconds: 5749.36
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 602e934cdccd171c-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 86
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 17 Dec 2020 06:27:01 GMT
+1 < Etag: W/"56-DH/pv7LOyM0MUy6utQKy2OMZm+M"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=6FmMXQOW71N3dI3i8jpSRquTvqoPJNIvh%2F2ZvFMpA9evWBJXBMCIvJbc7lnL6Jpl7cLmQIK8F3vDEDkSdkfEFmF10kVvCx5OcJw%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d22a4379dfe2dfca84f389488b5e3ab571608186416; expires=Sat, 16-Jan-21 06:26:56 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0710fa64080000171c7e32f000000001
+{"name":"yogesh","job":"Automation","id":"495","createdAt":"2020-12-17T06:27:01.445Z"}
+
+11:57:02.087 [print] Response ID {
+  "createdAt": "2020-12-17T06:27:01.445Z",
+  "name": "yogesh",
+  "id": "495",
+  "job": "Automation"
+}
+

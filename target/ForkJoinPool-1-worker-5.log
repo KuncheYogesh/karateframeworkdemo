@@ -1,0 +1,37 @@
+11:56:50.808 Testsuite executed in Environment  
+11:56:52.882 request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+email=eve.holt%40reqres.in&password=pistol
+
+11:56:56.559 response time in milliseconds: 3676.52
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 602e9349df2d18a8-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 17 Dec 2020 06:26:56 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ovN3%2FOiPtwVmSgHp9FnR6OqrfpCY88xURdNhveCc7t8LZOpj0RrMeWqSnQxRLfl8lJLTBZgxpk6eLdsXNIrCHHffMmy6qpHtTUk%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dff0baf2033ce689eb466f681aae19acc1608186415; expires=Sat, 16-Jan-21 06:26:55 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0710fa622b000018a88fa31000000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+11:56:56.563 [print] Token Id is {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+11:56:56.567 [print] Access Token is QpwL5tke4Pnpja7X4

@@ -1,0 +1,36 @@
+<testsuite failures="0" name="DemoKarate/feature/e2eTestFlow.feature" skipped="0" tests="1" time="7.23622">
+  <testcase classname="DemoKarate.feature.e2eTestFlow" name="User details" time="7.23622">
+    <system-out>* url 'https://reqres.in' ................................................. passed
+* def requestpayload = read('../utils/Userdetails.json') .................. passed
+* header Content-Type = 'application/json' ................................ passed
+Given path '/api/users' ................................................... passed
+And param page = '2' ...................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+Then print 'List of UserDetails', data .................................... passed
+* def callFunction = ...................................................... passed
+* def userDetails = call callFunction data ................................ passed
+Then print 'My userDetails', userDetails .................................. passed
+* def firstname1 = userDetails.first_name ................................. passed
+Then print 'My Firstname', firstname1 ..................................... passed
+And match firstname1 == 'Tobias' .......................................... passed
+Given path '/api/users' ................................................... passed
+And request requestpayload ................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* print 'Created User details', response .................................. passed
+* def generatedID = response.id ........................................... passed
+* print 'ID created for New user', generatedID ............................ passed
+Given path '/api/users/'+ generatedID +'' ................................. passed
+And request {"name":"yogesh","job":"AutomationKarateAPI"} ................. passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+Then print 'Updated Job details', response ................................ passed
+* def putResponse = response .............................................. passed
+Given path '/api/users/'+ generatedID +'' ................................. passed
+And request putResponse ................................................... passed
+When method DELETE ........................................................ passed
+Then status 204 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

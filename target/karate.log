@@ -1,0 +1,880 @@
+17:58:43.647 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+17:58:43.976 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - Testsuite executed in Environment  
+17:58:43.986 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - Testsuite executed in Environment  
+17:58:43.991 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - Testsuite executed in Environment  
+17:58:43.993 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - Testsuite executed in Environment  
+17:58:43.999 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Testsuite executed in Environment  
+17:58:44.174 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - scenario called at line: 11 by tag: @smoke
+17:58:44.211 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Random string generated MAGTu
+17:58:44.440 [ForkJoinPool-1-worker-3] INFO  DemoKarate.feature.DbUtils - init jdbc template: jdbc:oracle:thin:@10.188.193.183:1521:INFADB
+17:58:45.252 [ForkJoinPool-1-worker-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+17:58:45.252 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+17:58:45.252 [ForkJoinPool-1-worker-5] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+email=eve.holt%40reqres.in&password=pistol
+
+17:58:45.252 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users?delay=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 51
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"MAGTu","job":"Automation","company":"TEK"}
+
+17:58:46.059 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] DB employees list [
+  {
+    "ENAME": "STARC",
+    "ENO": 1,
+    "LOC": "AUS",
+    "SAL": 1000,
+    "DNO": 10
+  },
+  {
+    "ENAME": "JOFRA",
+    "ENO": 2,
+    "LOC": "ENG",
+    "SAL": 2000,
+    "DNO": 20
+  },
+  {
+    "ENAME": "AMIR",
+    "ENO": 3,
+    "LOC": "PAK",
+    "SAL": 3000,
+    "DNO": 30
+  },
+  {
+    "ENAME": "FAF DUPL",
+    "ENO": 4,
+    "LOC": "SA",
+    "SAL": 4000,
+    "DNO": 10
+  },
+  {
+    "ENAME": "Koganti",
+    "ENO": 5,
+    "LOC": "AFG",
+    "SAL": 5000,
+    "DNO": 40
+  },
+  {
+    "ENAME": "BOLT",
+    "ENO": 6,
+    "LOC": "NZ",
+    "SAL": 7000,
+    "DNO": 30
+  },
+  {
+    "ENAME": "JOHN",
+    "ENO": 9,
+    "LOC": "ENG",
+    "SAL": 9000,
+    "DNO": 20
+  },
+  {
+    "ENAME": "SUMSHINE",
+    "ENO": 11,
+    "LOC": "AUS",
+    "SAL": 1000,
+    "DNO": 11
+  },
+  {
+    "ENAME": "Kishore",
+    "ENO": 7,
+    "LOC": "CPT",
+    "SAL": 7400,
+    "DNO": 70
+  }
+]
+
+17:58:46.180 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - response time in milliseconds: 923.41
+1 < 200
+1 < Age: 111
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 602867f45bb21a62-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 16 Dec 2020 12:28:46 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=0FbUmMnTP5lg9FZRgxhlyAIpzaNCvdlyAAmo%2F1nskkpTg4hTWmhT4td9h%2BhHz%2BRRTx%2FZ7%2B05ovSg7%2FA0l69tNqd9Q573Og9%2FX0M%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d320877ae2ca5d4e79f0e184f4a6440391608121726; expires=Fri, 15-Jan-21 12:28:46 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < access-control-allow-origin: *
+1 < cf-request-id: 070d1f4cb500001a62380ad000000001
+1 < etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:58:46.219 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - [print] List of UserDetails [
+  {
+    "last_name": "Lawson",
+    "id": 7,
+    "avatar": "https://reqres.in/img/faces/7-image.jpg",
+    "first_name": "Michael",
+    "email": "michael.lawson@reqres.in"
+  },
+  {
+    "last_name": "Ferguson",
+    "id": 8,
+    "avatar": "https://reqres.in/img/faces/8-image.jpg",
+    "first_name": "Lindsay",
+    "email": "lindsay.ferguson@reqres.in"
+  },
+  {
+    "last_name": "Funke",
+    "id": 9,
+    "avatar": "https://reqres.in/img/faces/9-image.jpg",
+    "first_name": "Tobias",
+    "email": "tobias.funke@reqres.in"
+  },
+  {
+    "last_name": "Fields",
+    "id": 10,
+    "avatar": "https://reqres.in/img/faces/10-image.jpg",
+    "first_name": "Byron",
+    "email": "byron.fields@reqres.in"
+  },
+  {
+    "last_name": "Edwards",
+    "id": 11,
+    "avatar": "https://reqres.in/img/faces/11-image.jpg",
+    "first_name": "George",
+    "email": "george.edwards@reqres.in"
+  },
+  {
+    "last_name": "Howell",
+    "id": 12,
+    "avatar": "https://reqres.in/img/faces/12-image.jpg",
+    "first_name": "Rachel",
+    "email": "rachel.howell@reqres.in"
+  }
+]
+
+17:58:46.223 [pool-1-thread-3] INFO  com.intuit.karate.Runner - <<pass>> feature 3 of 11: classpath:DemoKarate/feature/dbConnection.feature
+17:58:46.280 [ForkJoinPool-1-worker-4] DEBUG com.intuit.karate - response time in milliseconds: 1027.05
+1 < 200
+1 < Age: 4529
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 602867f45bc5018b-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 16 Dec 2020 12:28:46 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=YVMXmNb7e2FlNdIHWjHYcg7P8KoVZd0XQcRIEQFaEjbh7DWIsKVuY5Rf2zM%2BS5K%2FPpiZozyaSfJnsuvUbX7Mtihoiy5fAh0ZrgY%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=db7144aad3c6fec5d6fb5d21e91ec2ae81608121726; expires=Fri, 15-Jan-21 12:28:46 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < access-control-allow-origin: *
+1 < cf-request-id: 070d1f4cb40000018bdb8c6000000001
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:58:46.295 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - Testsuite executed in Environment  
+17:58:46.309 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - [print] Users from the GET API {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+
+17:58:46.328 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users?delay=5
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 36
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"yogesh","job":"Automation"}
+
+17:58:46.331 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - [print] My userDetails {
+  "last_name": "Funke",
+  "id": 9,
+  "avatar": "https://reqres.in/img/faces/9-image.jpg",
+  "first_name": "Tobias",
+  "email": "tobias.funke@reqres.in"
+}
+
+17:58:46.355 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - [print] My Firstname Tobias
+17:58:46.370 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - request:
+2 > POST https://reqres.in/api/users
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 36
+2 > Content-Type: application/json; charset=UTF-8
+2 > Cookie: __cfduid=d320877ae2ca5d4e79f0e184f4a6440391608121726
+2 > Host: reqres.in
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"yogesh","job":"Automation"}
+
+17:58:46.380 [ForkJoinPool-1-worker-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/3
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+17:58:46.554 [ForkJoinPool-1-worker-5] DEBUG com.intuit.karate - response time in milliseconds: 1301.41
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 602867f45eb11704-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 16 Dec 2020 12:28:46 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=na8osgyh7kxWGgfvvn5DzIoir8qEWqXzvvWqKo77EiXYQItzBG2C4iIdDCZhO02ke33u97xZZxTa2gDdugtKIKcxe6vXGQhQrOY%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=df42f745336dadeb527601c5df6d07ffd1608121726; expires=Fri, 15-Jan-21 12:28:46 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 070d1f4cb5000017048a97a000000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+17:58:46.568 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - [print] Token Id is {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+17:58:46.576 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - [print] Access Token is QpwL5tke4Pnpja7X4
+17:58:46.589 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 10 of 11: classpath:DemoKarate/feature/UserDetailsAuthentication.feature
+17:58:46.639 [ForkJoinPool-1-worker-4] DEBUG com.intuit.karate - response time in milliseconds: 258.50
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 5080
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 602867f7681b1a4a-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 16 Dec 2020 12:28:46 GMT
+1 < Etag: W/"112-EeInfgHWtnxhYRnwgZUB667e024"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=0ybDgAFnuKKO5rXuQ55RHOOzjUVMNIEX5XeQtI5B%2F8wr4R%2FjC0XBQKwHLOjzvnG9mGv6GjGNtv%2FklwSdb53BQq5u2eT0G0%2B93Rs%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dba8d24afb52faf1987a86a783b6dc4341608121726; expires=Fri, 15-Jan-21 12:28:46 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 070d1f4e9d00001a4aa43d1000000001
+{"data":{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:58:46.647 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - [print] From different featurefile result {
+  "data": {
+    "last_name": "Wong",
+    "id": 3,
+    "avatar": "https://reqres.in/img/faces/3-image.jpg",
+    "first_name": "Emma",
+    "email": "emma.wong@reqres.in"
+  },
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+17:58:46.657 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - [print] Firstname Userdetails id 2 is Janet
+17:58:46.668 [pool-1-thread-5] INFO  com.intuit.karate.Runner - <<pass>> feature 9 of 11: classpath:DemoKarate/feature/UserDetails2.feature
+17:58:47.024 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - response time in milliseconds: 653.19
+2 < 201
+2 < Access-Control-Allow-Origin: *
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 602867f74821d9c0-SIN
+2 < Connection: keep-alive
+2 < Content-Length: 86
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Wed, 16 Dec 2020 12:28:47 GMT
+2 < Etag: W/"56-AeeJwLG/60sro382irlItbMq6CY"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < NEL: {"report_to":"cf-nel","max_age":604800}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=pCqYSZgVnRfzLs2XqJNkeGYx5qQBo3erMHpDnWaPh25rEZ6zy6CEGl3QlHByJDQR964pN7%2B7MbifP7sMU3SaG5u7ii1lr%2BVQaZM%3D"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Via: 1.1 vegur
+2 < X-Powered-By: Express
+2 < cf-request-id: 070d1f4e920000d9c0ba943000000001
+{"name":"yogesh","job":"Automation","id":"854","createdAt":"2020-12-16T12:28:46.913Z"}
+
+17:58:47.031 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - [print] Created User details {
+  "createdAt": "2020-12-16T12:28:46.913Z",
+  "name": "yogesh",
+  "id": "854",
+  "job": "Automation"
+}
+
+17:58:47.048 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - [print] ID created for New user 854
+17:58:47.057 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - request:
+3 > PUT https://reqres.in/api/users/854
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 45
+3 > Content-Type: application/json; charset=UTF-8
+3 > Cookie: __cfduid=d320877ae2ca5d4e79f0e184f4a6440391608121726
+3 > Host: reqres.in
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"yogesh","job":"AutomationKarateAPI"}
+
+17:58:47.713 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - response time in milliseconds: 654.04
+3 < 200
+3 < Access-Control-Allow-Origin: *
+3 < CF-Cache-Status: DYNAMIC
+3 < CF-RAY: 602867fb99c7cc10-SIN
+3 < Connection: keep-alive
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Wed, 16 Dec 2020 12:28:47 GMT
+3 < Etag: W/"54-8MTsMeEanfyO2z5fUrasYs+Cn44"
+3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 < NEL: {"report_to":"cf-nel","max_age":604800}
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=QldSy%2FNC9Cu%2FzF8fTkgr6wSa1SUUKikb8D8KIl8v4zwaRbiJgtlr1eLxc2vESbRaxMeprH649oUWUWVbTn%2FpPOcpp4b9owyEFAc%3D"}],"group":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < Transfer-Encoding: chunked
+3 < Vary: Accept-Encoding
+3 < Via: 1.1 vegur
+3 < X-Powered-By: Express
+3 < cf-request-id: 070d1f51400000cc104397f000000001
+{"name":"yogesh","job":"AutomationKarateAPI","updatedAt":"2020-12-16T12:28:47.602Z"}
+
+17:58:47.717 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - [print] Updated Job details {
+  "name": "yogesh",
+  "job": "AutomationKarateAPI",
+  "updatedAt": "2020-12-16T12:28:47.602Z"
+}
+
+17:58:47.719 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - request:
+4 > DELETE https://reqres.in/api/users/854
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Content-Length: 84
+4 > Content-Type: application/json; charset=UTF-8
+4 > Cookie: __cfduid=d320877ae2ca5d4e79f0e184f4a6440391608121726
+4 > Host: reqres.in
+4 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"yogesh","job":"AutomationKarateAPI","updatedAt":"2020-12-16T12:28:47.602Z"}
+
+17:58:48.385 [ForkJoinPool-1-worker-2] DEBUG com.intuit.karate - response time in milliseconds: 664.68
+4 < 204
+4 < Access-Control-Allow-Origin: *
+4 < CF-Cache-Status: DYNAMIC
+4 < CF-RAY: 602867ffbe58dd02-SIN
+4 < Connection: keep-alive
+4 < Content-Length: 0
+4 < Date: Wed, 16 Dec 2020 12:28:48 GMT
+4 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+4 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+4 < NEL: {"report_to":"cf-nel","max_age":604800}
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=xBcaeaH%2FeWogWfbCoNCh5Euo57zbDMKRj17O7YwZ7KC%2Bhw6SdJI4fdfEHTOtUgcuoyOOdUlYv%2FXkNmLXlTT3raLqwbsx4r1hIDY%3D"}],"group":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < Via: 1.1 vegur
+4 < X-Powered-By: Express
+4 < cf-request-id: 070d1f53d10000dd02ad8d8000000001
+
+17:58:48.390 [pool-1-thread-4] INFO  com.intuit.karate.Runner - <<pass>> feature 4 of 11: classpath:DemoKarate/feature/e2eTestFlow.feature
+17:58:48.558 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 3305.68
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 602867f45eb518f0-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 101
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 16 Dec 2020 12:28:48 GMT
+1 < Etag: W/"65-ZFZw9oHiWnHQPP0/0Ps81G8QRu0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=HbvgEv6%2FJP%2B3DDQn00JmXYUIG4sS5HunLk%2BtmPHpSdZSrce4FR%2BgvLb4G8n05gdrZ6uNz%2B7Qs8UJulfVP9BsxeUDT2wu9sCpIxU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d5d743be3210cf0fecee0d7a27e0c236d1608121726; expires=Fri, 15-Jan-21 12:28:46 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 070d1f4cb4000018f0229e4000000001
+{"name":"MAGTu","job":"Automation","company":"TEK","id":"839","createdAt":"2020-12-16T12:28:48.450Z"}
+
+17:58:48.561 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Response ID {
+  "createdAt": "2020-12-16T12:28:48.450Z",
+  "name": "MAGTu",
+  "company": "TEK",
+  "id": "839",
+  "job": "Automation"
+}
+
+17:58:48.564 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Response ID generated for request is  839
+17:58:48.570 [pool-1-thread-2] INFO  com.intuit.karate.Runner - <<pass>> feature 6 of 11: classpath:DemoKarate/feature/generateRandomString.feature
+17:58:52.026 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 5696.29
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 602867f73835189b-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 85
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 16 Dec 2020 12:28:52 GMT
+1 < Etag: W/"55-ewRAi2Ouw+kWv0c/4377mBPrQJU"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=rXK0hruKwqNsHw7bbeE46C6cxXxggfZfPXL7pLL8xnvPkNWy%2BZTuSyLv%2FIcvlD%2B5qBcuo%2Fc6RlDWQnla5yXczPKGA%2BP54WiGZgU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d719f2ae33b3ffcb41253f81dd3f85cf21608121726; expires=Fri, 15-Jan-21 12:28:46 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 070d1f4e890000189b279d3000000001
+{"name":"yogesh","job":"Automation","id":"53","createdAt":"2020-12-16T12:28:51.905Z"}
+
+17:58:52.030 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] Response ID {
+  "createdAt": "2020-12-16T12:28:51.905Z",
+  "name": "yogesh",
+  "id": "53",
+  "job": "Automation"
+}
+
+17:58:52.043 [pool-1-thread-3] INFO  com.intuit.karate.Runner - <<pass>> feature 11 of 11: classpath:DemoKarate/feature/UserDetailsPost.feature
+11:56:50.399 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+11:56:50.805 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Testsuite executed in Environment  
+11:56:50.805 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - Testsuite executed in Environment  
+11:56:50.805 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - Testsuite executed in Environment  
+11:56:50.805 [ForkJoinPool-1-worker-2] INFO  com.intuit.karate - Testsuite executed in Environment  
+11:56:50.805 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - Testsuite executed in Environment  
+11:56:51.058 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - scenario called at line: 11 by tag: @smoke
+11:56:51.163 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Random string generated DuiDb
+11:56:51.666 [ForkJoinPool-1-worker-2] INFO  DemoKarate.feature.DbUtils - init jdbc template: jdbc:oracle:thin:@10.188.193.183:1521:INFADB
+11:56:52.880 [ForkJoinPool-1-worker-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+11:56:52.880 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+11:56:52.882 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users?delay=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 51
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"DuiDb","job":"Automation","company":"TEK"}
+
+11:56:52.882 [ForkJoinPool-1-worker-5] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+email=eve.holt%40reqres.in&password=pistol
+
+11:56:53.785 [ForkJoinPool-1-worker-4] DEBUG com.intuit.karate - response time in milliseconds: 900.64
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 185
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 602e933acdc419fd-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 17 Dec 2020 06:26:53 GMT
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=dVAMqNBEUjpbTy7HR1mnHH9jCI9VppOMYlJ7%2F9YuQdtdElSYrCZTh277msXYd72AUvM%2BYOMgcHah03nB9yyo%2FqEtzrZ%2BavWgOB0%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=de455934cd3facdafcd4e3dc072da3af01608186413; expires=Sat, 16-Jan-21 06:26:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0710fa58bf000019fd5b1c4000000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:56:53.807 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - [print] Users from the GET API {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+
+11:56:53.827 [ForkJoinPool-1-worker-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/3
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+11:56:54.478 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 1595.91
+1 < 200
+1 < Age: 7148
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 602e933e8b121a2e-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 17 Dec 2020 06:26:53 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=kI1fcTHoukgBkYVYFZIWDZmbuDzgKBoGxfE5yOWXwsm%2B3kJhYkCXHuO2wHcTMZOr8sKemYA1qp%2FfnuySmHrBx54%2FizJI%2BEu4Fuc%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d7b8ef37abd6ce819613de6e6d8c79fd11608186413; expires=Sat, 16-Jan-21 06:26:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < access-control-allow-origin: *
+1 < cf-request-id: 0710fa5b1200001a2eb21c0000000001
+1 < etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:56:54.495 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] List of UserDetails [
+  {
+    "last_name": "Lawson",
+    "id": 7,
+    "avatar": "https://reqres.in/img/faces/7-image.jpg",
+    "first_name": "Michael",
+    "email": "michael.lawson@reqres.in"
+  },
+  {
+    "last_name": "Ferguson",
+    "id": 8,
+    "avatar": "https://reqres.in/img/faces/8-image.jpg",
+    "first_name": "Lindsay",
+    "email": "lindsay.ferguson@reqres.in"
+  },
+  {
+    "last_name": "Funke",
+    "id": 9,
+    "avatar": "https://reqres.in/img/faces/9-image.jpg",
+    "first_name": "Tobias",
+    "email": "tobias.funke@reqres.in"
+  },
+  {
+    "last_name": "Fields",
+    "id": 10,
+    "avatar": "https://reqres.in/img/faces/10-image.jpg",
+    "first_name": "Byron",
+    "email": "byron.fields@reqres.in"
+  },
+  {
+    "last_name": "Edwards",
+    "id": 11,
+    "avatar": "https://reqres.in/img/faces/11-image.jpg",
+    "first_name": "George",
+    "email": "george.edwards@reqres.in"
+  },
+  {
+    "last_name": "Howell",
+    "id": 12,
+    "avatar": "https://reqres.in/img/faces/12-image.jpg",
+    "first_name": "Rachel",
+    "email": "rachel.howell@reqres.in"
+  }
+]
+
+11:56:54.538 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] My userDetails {
+  "last_name": "Funke",
+  "id": 9,
+  "avatar": "https://reqres.in/img/faces/9-image.jpg",
+  "first_name": "Tobias",
+  "email": "tobias.funke@reqres.in"
+}
+
+11:56:54.544 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] My Firstname Tobias
+11:56:54.547 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+2 > POST https://reqres.in/api/users
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 36
+2 > Content-Type: application/json; charset=UTF-8
+2 > Cookie: __cfduid=d7b8ef37abd6ce819613de6e6d8c79fd11608186413
+2 > Host: reqres.in
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"yogesh","job":"Automation"}
+
+11:56:55.341 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 791.84
+2 < 201
+2 < Access-Control-Allow-Origin: *
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 602e9341af5d01b8-SIN
+2 < Connection: keep-alive
+2 < Content-Length: 86
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Thu, 17 Dec 2020 06:26:54 GMT
+2 < Etag: W/"56-kdu0mbUmHZhHjS/mZQByTm84gWI"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < NEL: {"report_to":"cf-nel","max_age":604800}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=tEnywPWs1qEeyuEOdDtlZaF6%2FXqVHDRYRT3eOzGZrsjr3YOJFQK8ryX14fDSHz5kEvuUynYTgrw9Rr7ZldjkbDTc8GH7zYW%2FWMo%3D"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Via: 1.1 vegur
+2 < X-Powered-By: Express
+2 < cf-request-id: 0710fa5d07000001b899009000000001
+{"name":"yogesh","job":"Automation","id":"826","createdAt":"2020-12-17T06:26:54.654Z"}
+
+11:56:55.347 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] Created User details {
+  "createdAt": "2020-12-17T06:26:54.654Z",
+  "name": "yogesh",
+  "id": "826",
+  "job": "Automation"
+}
+
+11:56:55.353 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] ID created for New user 826
+11:56:55.357 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+3 > PUT https://reqres.in/api/users/826
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 45
+3 > Content-Type: application/json; charset=UTF-8
+3 > Cookie: __cfduid=d7b8ef37abd6ce819613de6e6d8c79fd11608186413
+3 > Host: reqres.in
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"yogesh","job":"AutomationKarateAPI"}
+
+11:56:56.170 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 3287.48
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 602e933acb89c363-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 101
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 17 Dec 2020 06:26:55 GMT
+1 < Etag: W/"65-wuaRYINdOdN1sW7wiVTMd4qb0EI"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Xn1MbdwerU7y7DBHHQZCuWFenw2%2BLw2xJnEYi8oHHRPqFhuhvzzdDq62aDGFMaVQZtAjUT6W3CnUBd%2BXvb76o9vjstDg4Y39Wig%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d0854e45407cbcda47af1f540a89fa8df1608186413; expires=Sat, 16-Jan-21 06:26:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0710fa58c00000c3635bbed000000001
+{"name":"DuiDb","job":"Automation","company":"TEK","id":"622","createdAt":"2020-12-17T06:26:55.560Z"}
+
+11:56:56.178 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Response ID {
+  "createdAt": "2020-12-17T06:26:55.560Z",
+  "name": "DuiDb",
+  "company": "TEK",
+  "id": "622",
+  "job": "Automation"
+}
+
+11:56:56.185 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Response ID generated for request is  622
+11:56:56.313 [pool-1-thread-2] INFO  com.intuit.karate.Runner - <<pass>> feature 6 of 11: classpath:DemoKarate/feature/generateRandomString.feature
+11:56:56.331 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Testsuite executed in Environment  
+11:56:56.336 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users?delay=5
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 36
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"yogesh","job":"Automation"}
+
+11:56:56.559 [ForkJoinPool-1-worker-5] DEBUG com.intuit.karate - response time in milliseconds: 3676.52
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 602e9349df2d18a8-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 17 Dec 2020 06:26:56 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ovN3%2FOiPtwVmSgHp9FnR6OqrfpCY88xURdNhveCc7t8LZOpj0RrMeWqSnQxRLfl8lJLTBZgxpk6eLdsXNIrCHHffMmy6qpHtTUk%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dff0baf2033ce689eb466f681aae19acc1608186415; expires=Sat, 16-Jan-21 06:26:55 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0710fa622b000018a88fa31000000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+11:56:56.562 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - [print] Token Id is {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
+}
+
+11:56:56.566 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - [print] Access Token is QpwL5tke4Pnpja7X4
+11:56:56.574 [pool-1-thread-5] INFO  com.intuit.karate.Runner - <<pass>> feature 10 of 11: classpath:DemoKarate/feature/UserDetailsAuthentication.feature
+11:56:57.136 [ForkJoinPool-1-worker-4] DEBUG com.intuit.karate - response time in milliseconds: 3306.58
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 3514
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 602e934febb1e247-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 17 Dec 2020 06:26:56 GMT
+1 < Etag: W/"112-EeInfgHWtnxhYRnwgZUB667e024"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=kcBHlP7xAuNBGVOyFMl%2BhxuioLvXG9hRqTm8sTPipn1ksaeCY0s85V9S4h6779qWhgUG4rX74AuFbZF9hS%2Fizh%2BmotJLEx9Hiyo%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d6545893681b53243601251953d93af911608186416; expires=Sat, 16-Jan-21 06:26:56 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0710fa65f00000e247291d4000000001
+{"data":{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:56:57.151 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - [print] From different featurefile result {
+  "data": {
+    "last_name": "Wong",
+    "id": 3,
+    "avatar": "https://reqres.in/img/faces/3-image.jpg",
+    "first_name": "Emma",
+    "email": "emma.wong@reqres.in"
+  },
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+11:56:57.165 [ForkJoinPool-1-worker-4] INFO  com.intuit.karate - [print] Firstname Userdetails id 2 is Janet
+11:56:57.172 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 9 of 11: classpath:DemoKarate/feature/UserDetails2.feature
+11:56:57.470 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 2112.45
+3 < 200
+3 < Access-Control-Allow-Origin: *
+3 < CF-Cache-Status: DYNAMIC
+3 < CF-RAY: 602e934cc86bc39f-SIN
+3 < Connection: keep-alive
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Thu, 17 Dec 2020 06:26:56 GMT
+3 < Etag: W/"54-Ny/BdC6Zj2TQiLhHNYfPBTOdS94"
+3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 < NEL: {"report_to":"cf-nel","max_age":604800}
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=2hXhrAmyweoGdYxjCenlzETAnm9yK2josRXbhx4Olb2%2FZns%2BC9z8hjwPi1oNH1%2Box%2BU2pLnl8supn6R6B0SYKxWVA89DwNYIDLg%3D"}],"group":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < Transfer-Encoding: chunked
+3 < Vary: Accept-Encoding
+3 < Via: 1.1 vegur
+3 < X-Powered-By: Express
+3 < cf-request-id: 0710fa63fb0000c39fcc369000000001
+{"name":"yogesh","job":"AutomationKarateAPI","updatedAt":"2020-12-17T06:26:56.433Z"}
+
+11:56:57.473 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] Updated Job details {
+  "name": "yogesh",
+  "job": "AutomationKarateAPI",
+  "updatedAt": "2020-12-17T06:26:56.433Z"
+}
+
+11:56:57.475 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+4 > DELETE https://reqres.in/api/users/826
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Content-Length: 84
+4 > Content-Type: application/json; charset=UTF-8
+4 > Cookie: __cfduid=d7b8ef37abd6ce819613de6e6d8c79fd11608186413
+4 > Host: reqres.in
+4 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{"name":"yogesh","job":"AutomationKarateAPI","updatedAt":"2020-12-17T06:26:56.433Z"}
+
+11:56:58.201 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 725.12
+4 < 204
+4 < Access-Control-Allow-Origin: *
+4 < CF-Cache-Status: DYNAMIC
+4 < CF-RAY: 602e93540883d99c-SIN
+4 < Connection: keep-alive
+4 < Content-Length: 0
+4 < Date: Thu, 17 Dec 2020 06:26:57 GMT
+4 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+4 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+4 < NEL: {"report_to":"cf-nel","max_age":604800}
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=2utskjXL%2Fxbn8GIq5BjUn68ok09fhF4nX08Jz9vJh61LtXkMqsdNkOIy7huvA4JTBXaKcEjp8LyA7ntcSzhXfKhCE1ZEbI6rU6A%3D"}],"group":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < Via: 1.1 vegur
+4 < X-Powered-By: Express
+4 < cf-request-id: 0710fa68840000d99c7ea21000000001
+
+11:56:58.226 [pool-1-thread-4] INFO  com.intuit.karate.Runner - <<pass>> feature 4 of 11: classpath:DemoKarate/feature/e2eTestFlow.feature
+11:57:02.086 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 5749.36
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 602e934cdccd171c-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 86
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 17 Dec 2020 06:27:01 GMT
+1 < Etag: W/"56-DH/pv7LOyM0MUy6utQKy2OMZm+M"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=6FmMXQOW71N3dI3i8jpSRquTvqoPJNIvh%2F2ZvFMpA9evWBJXBMCIvJbc7lnL6Jpl7cLmQIK8F3vDEDkSdkfEFmF10kVvCx5OcJw%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d22a4379dfe2dfca84f389488b5e3ab571608186416; expires=Sat, 16-Jan-21 06:26:56 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0710fa64080000171c7e32f000000001
+{"name":"yogesh","job":"Automation","id":"495","createdAt":"2020-12-17T06:27:01.445Z"}
+
+11:57:02.087 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Response ID {
+  "createdAt": "2020-12-17T06:27:01.445Z",
+  "name": "yogesh",
+  "id": "495",
+  "job": "Automation"
+}
+
+11:57:02.093 [pool-1-thread-2] INFO  com.intuit.karate.Runner - <<pass>> feature 11 of 11: classpath:DemoKarate/feature/UserDetailsPost.feature
+11:57:34.421 [pool-1-thread-3] INFO  com.intuit.karate.Runner - <<fail>> feature 3 of 11: classpath:DemoKarate/feature/dbConnection.feature

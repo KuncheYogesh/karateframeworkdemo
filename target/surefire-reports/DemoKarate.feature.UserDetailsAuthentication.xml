@@ -1,0 +1,12 @@
+<testsuite failures="0" name="DemoKarate/feature/UserDetailsAuthentication.feature" skipped="0" tests="1" time="5.628004">
+  <testcase classname="DemoKarate.feature.UserDetailsAuthentication" name="Generate Authentication Token" time="5.628004">
+    <system-out>* url 'https://reqres.in/api/register' .................................... passed
+And form field email = 'eve.holt@reqres.in', .............................. passed
+And form field password = 'pistol' ........................................ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+Then print 'Token Id is', response ........................................ passed
+* def accessToken = response.token ........................................ passed
+Then print 'Access Token is',accessToken .................................. passed</system-out>
+  </testcase>
+</testsuite>
