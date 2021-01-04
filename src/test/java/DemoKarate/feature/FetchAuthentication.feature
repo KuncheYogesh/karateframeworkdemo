@@ -1,4 +1,4 @@
-@ignore
+
 Feature: Fetch Authentication Token
 
   Background:
@@ -6,7 +6,7 @@ Feature: Fetch Authentication Token
   #{email:'eve.holt@reqres.in',password:'pistol'}
     * def authToken = Authentication.accessToken
     * def requestpayload = read('../utils/Userdetails.json')
-      
+
     Scenario: Post call with Authentication
 
       When url 'https://reqres.in/api/users'
