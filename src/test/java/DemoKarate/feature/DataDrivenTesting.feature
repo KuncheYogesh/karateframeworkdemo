@@ -4,7 +4,7 @@ Feature: E2E testing
   Background:
     * url 'http://dummy.restapiexample.com/'
 
-    Scenario Outline: Create UserDetails
+    Scenario Outline: Create UserDetails <name>
       Given path 'api/v1/create'
       * request {"name":<name>,"salary":<salary>,"age":<age>}
       When method POST

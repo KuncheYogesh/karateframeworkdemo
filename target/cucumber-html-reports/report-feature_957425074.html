@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Karate_Intellij</td>
-      <td>19 Dec 2020, 16:36</td>
+      <td>04 Jan 2021, 17:05</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">DemoKarate/feature/dbConnection.feature</td>
-          <td      class="passed"    >3</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >2</td>
+          <td      class="passed"    >6</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">6</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="42902922610">42.902</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="1411808071">1.411</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">DemoKarate/feature/dbConnection.feature</span>
 
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.492</span>
+  <span class="lead-duration duration">0.220</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>16:36:09.583 Testsuite executed in Environment</pre>
+        <pre>17:05:50.588 Testsuite executed in Environment</pre>
       </div>
     </div>
   </div>
@@ -269,7 +269,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def DbUtils = Java.type('DemoKarate.feature.DbUtils')</span>
 
-  <span class="lead-duration duration">0.022</span>
+  <span class="lead-duration duration">0.014</span>
 
 </div>
 
@@ -296,7 +296,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def db = new DbUtils(config)</span>
 
-  <span class="lead-duration duration">0.469</span>
+  <span class="lead-duration duration">0.206</span>
 
 </div>
 
@@ -334,12 +334,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">42.410</span>
+  <span class="lead-duration duration">1.191</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name"></span>
 
@@ -350,16 +350,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details  in ">
+  <div id="element-4" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -369,15 +369,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-* failed">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def employees = db.readRows(&quot;select * from B_EMP&quot;)</span>
 
-  <span class="lead-duration duration">42.410</span>
+  <span class="lead-duration duration">1.178</span>
 
 </div>
 
@@ -386,13 +386,107 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>com.intuit.karate.exception.KarateException:</a>
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: dbConnection.feature:11 - javascript evaluation failed: db.readRows(&quot;select * from B_EMP&quot;), Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection</pre>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'DB employees list', employees</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>17:05:52.076 [print] DB employees list [
+  {
+    &quot;ENAME&quot;: &quot;STARC&quot;,
+    &quot;ENO&quot;: 1,
+    &quot;LOC&quot;: &quot;AUS&quot;,
+    &quot;SAL&quot;: 1000,
+    &quot;DNO&quot;: 10
+  },
+  {
+    &quot;ENAME&quot;: &quot;JOFRA&quot;,
+    &quot;ENO&quot;: 2,
+    &quot;LOC&quot;: &quot;ENG&quot;,
+    &quot;SAL&quot;: 2000,
+    &quot;DNO&quot;: 20
+  },
+  {
+    &quot;ENAME&quot;: &quot;AMIR&quot;,
+    &quot;ENO&quot;: 3,
+    &quot;LOC&quot;: &quot;PAK&quot;,
+    &quot;SAL&quot;: 3000,
+    &quot;DNO&quot;: 30
+  },
+  {
+    &quot;ENAME&quot;: &quot;FAF DUPL&quot;,
+    &quot;ENO&quot;: 4,
+    &quot;LOC&quot;: &quot;SA&quot;,
+    &quot;SAL&quot;: 4000,
+    &quot;DNO&quot;: 10
+  },
+  {
+    &quot;ENAME&quot;: &quot;Koganti&quot;,
+    &quot;ENO&quot;: 5,
+    &quot;LOC&quot;: &quot;AFG&quot;,
+    &quot;SAL&quot;: 5000,
+    &quot;DNO&quot;: 40
+  },
+  {
+    &quot;ENAME&quot;: &quot;BOLT&quot;,
+    &quot;ENO&quot;: 6,
+    &quot;LOC&quot;: &quot;NZ&quot;,
+    &quot;SAL&quot;: 7000,
+    &quot;DNO&quot;: 30
+  },
+  {
+    &quot;ENAME&quot;: &quot;JOHN&quot;,
+    &quot;ENO&quot;: 9,
+    &quot;LOC&quot;: &quot;ENG&quot;,
+    &quot;SAL&quot;: 9000,
+    &quot;DNO&quot;: 20
+  },
+  {
+    &quot;ENAME&quot;: &quot;SUMSHINE&quot;,
+    &quot;ENO&quot;: 11,
+    &quot;LOC&quot;: &quot;AUS&quot;,
+    &quot;SAL&quot;: 1000,
+    &quot;DNO&quot;: 11
+  },
+  {
+    &quot;ENAME&quot;: &quot;Kishore&quot;,
+    &quot;ENO&quot;: 7,
+    &quot;LOC&quot;: &quot;CPT&quot;,
+    &quot;SAL&quot;: 7400,
+    &quot;DNO&quot;: 70
+  }
+]</pre>
       </div>
     </div>
   </div>
@@ -403,46 +497,15 @@ $(document).ready(function() {
 
 
 
-
-
-
-
       </div>
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
-  <span class="keyword indention">*</span>
-  <span class="name">print 'DB employees list', employees</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match employees[*].ENAME contains 'STARC'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 

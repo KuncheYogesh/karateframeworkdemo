@@ -1,0 +1,13 @@
+<testsuite failures="0" name="DemoKarate/feature/FetchAuthentication.feature" skipped="0" tests="1" time="2.571968">
+  <testcase classname="DemoKarate.feature.FetchAuthentication" name="Post call with Authentication" time="2.571968">
+    <system-out>* def Authentication = call read('UserDetailsAuthentication.feature') ..... passed
+* def authToken = Authentication.accessToken .............................. passed
+* def requestpayload = read('../utils/Userdetails.json') .................. passed
+When url 'https://reqres.in/api/users' .................................... passed
+And header Authorization = authToken ...................................... passed
+And request requestpayload ................................................ passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* print 'Authentication response', response ............................... passed</system-out>
+  </testcase>
+</testsuite>

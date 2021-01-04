@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: DemoKarate/feature/UserDetailsPost.feature</title>
+<title>Cucumber Reports  - Feature: DemoKarate/feature/generateRandomString.feature</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Karate_Intellij</td>
-      <td>19 Dec 2020, 16:36</td>
+      <td>04 Jan 2021, 17:05</td>
     </tr>
   </tbody>
 </table>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">DemoKarate/feature/UserDetailsPost.feature</td>
-          <td      class="passed"    >8</td>
+          <td class="tagname">DemoKarate/feature/generateRandomString.feature</td>
+          <td      class="passed"    >13</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">8</td>
+          <td class="total">13</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="5436617367">5.436</td>
+          <td class="duration" data-value="3948352852">3.948</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,12 +173,12 @@ $(document).ready(function() {
 
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">DemoKarate/feature/UserDetailsPost.feature</span>
+  <span class="name">DemoKarate/feature/generateRandomString.feature</span>
 
 
 </div>
 
-        <div class="description indention">Post user details</div>
+        <div class="description indention">Generate random string function</div>
 
         <div class="elements inner-level">
 
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.006</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -230,9 +230,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def requestpayload = read('../utils/Userdetails.json')</span>
+  <span class="name">header Content-Type = 'application/json'</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -250,37 +250,10 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>16:36:11.866 Testsuite executed in Environment</pre>
+        <pre>17:05:50.589 Testsuite executed in Environment</pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">header Content-Type = 'application/json'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -307,14 +280,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">5.433</span>
+  <span class="lead-duration duration">3.942</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Post UserDetails to fetch ID's</span>
+  <span class="name">Using string in request</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -346,11 +319,145 @@ $(document).ready(function() {
       <div class="step">
 
 
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random_string =</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>function(s) {
+    var text = &quot;&quot;;
+    var possible = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&quot;;
+    for (var i = 0; i &lt; s; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+    return text;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def string =  random_string(5)</span>
+
+  <span class="lead-duration duration">0.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match string == '#string'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Random string generated',string</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>17:05:50.738 [print] Random string generated rXJPJ</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">url 'https://reqres.in/api/users'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -375,9 +482,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">request requestpayload</span>
+  <span class="name">request { name: '#(string)', job: 'Automation', company: 'TEK' }</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -402,7 +509,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">param delay = 5</span>
+  <span class="name">param delay = 2</span>
 
   <span class="lead-duration duration">0.003</span>
 
@@ -431,7 +538,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">5.427</span>
+  <span class="lead-duration duration">3.854</span>
 
 </div>
 
@@ -445,39 +552,39 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>16:36:11.876 request:
-1 &gt; POST https://reqres.in/api/users?delay=5
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>17:05:51.471 request:
+1 &gt; POST https://reqres.in/api/users?delay=2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 36
+1 &gt; Content-Length: 51
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: reqres.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-{&quot;name&quot;:&quot;yogesh&quot;,&quot;job&quot;:&quot;Automation&quot;}
+{&quot;name&quot;:&quot;rXJPJ&quot;,&quot;job&quot;:&quot;Automation&quot;,&quot;company&quot;:&quot;TEK&quot;}
 
-16:36:17.301 response time in milliseconds: 5423.06
+17:05:54.597 response time in milliseconds: 3124.89
 1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 6040a70b4a9dde35-BOM
+1 &lt; CF-RAY: 60c4a897380901b0-SIN
 1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 86
+1 &lt; Content-Length: 101
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 19 Dec 2020 11:06:13 GMT
+1 &lt; Date: Mon, 04 Jan 2021 11:35:54 GMT
+1 &lt; Etag: W/&quot;65-kQY1hYADb+YX0HhsjsOTD5dAIIs&quot;
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=s4%2FjaJCB9ws7iYR1NBDyDNFXhfbUhzoVrH4QDGjcbLO84hjviYIRTClwbpcQVqDM%2B99d0vyTRoadCghpdkhqD0od0K8cEU3XyQg%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=p5nN7%2BL5S9rgmQe%2FTRDkavvoYa7bK0%2FDDabMS3pHmUUkVcWllVG4NFKA9vWPOwJ7tsa6Za%2BCqn%2FIZJTVxcrAOo6T8YEtfvc06KQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d09b76ceca42d075e41124c16c83292191608375968; expires=Mon, 18-Jan-21 11:06:08 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; access-control-allow-origin: *
-1 &lt; cf-request-id: 071c46bb0a0000de35b3ae0000000001
-1 &lt; etag: W/&quot;56-fg8xex1nqvnWoOl2Rd2ZrPJ2q/E&quot;
-1 &lt; via: 1.1 vegur
-1 &lt; x-powered-by: Express
-{&quot;name&quot;:&quot;yogesh&quot;,&quot;job&quot;:&quot;Automation&quot;,&quot;id&quot;:&quot;523&quot;,&quot;createdAt&quot;:&quot;2020-12-19T11:06:13.754Z&quot;}</pre>
+1 &lt; Set-Cookie: __cfduid=ddcc515ba86f67697a85f6c268c649e8a1609760152; expires=Wed, 03-Feb-21 11:35:52 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 076ec7b282000001b097208000000001
+{&quot;name&quot;:&quot;rXJPJ&quot;,&quot;job&quot;:&quot;Automation&quot;,&quot;company&quot;:&quot;TEK&quot;,&quot;id&quot;:&quot;100&quot;,&quot;createdAt&quot;:&quot;2021-01-04T11:35:54.494Z&quot;}</pre>
       </div>
     </div>
   </div>
@@ -523,7 +630,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">print 'Response ID', response</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -537,16 +644,81 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
           <a>Doc string</a>
       </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>16:36:17.304 [print] Response ID {
-  &quot;createdAt&quot;: &quot;2020-12-19T11:06:13.754Z&quot;,
-  &quot;name&quot;: &quot;yogesh&quot;,
-  &quot;id&quot;: &quot;523&quot;,
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>17:05:54.611 [print] Response ID {
+  &quot;createdAt&quot;: &quot;2021-01-04T11:35:54.494Z&quot;,
+  &quot;name&quot;: &quot;rXJPJ&quot;,
+  &quot;company&quot;: &quot;TEK&quot;,
+  &quot;id&quot;: &quot;100&quot;,
   &quot;job&quot;: &quot;Automation&quot;
 }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseID = response.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Response ID generated for request is ',responseID</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>17:05:54.617 [print] Response ID generated for request is  100</pre>
       </div>
     </div>
   </div>
