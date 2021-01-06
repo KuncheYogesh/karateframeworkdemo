@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: DemoKarate/feature/dbConnection.feature</title>
+<title>Cucumber Reports  - Feature: DemoKarate/feature/UserDetailsPost.feature</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Karate_Intellij</td>
-      <td>04 Jan 2021, 17:05</td>
+      <td>06 Jan 2021, 13:20</td>
     </tr>
   </tbody>
 </table>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">DemoKarate/feature/dbConnection.feature</td>
-          <td      class="passed"    >6</td>
+          <td class="tagname">DemoKarate/feature/UserDetailsPost.feature</td>
+          <td      class="passed"    >8</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">6</td>
+          <td class="total">8</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1411808071">1.411</td>
+          <td class="duration" data-value="5594231687">5.594</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,12 +173,12 @@ $(document).ready(function() {
 
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">DemoKarate/feature/dbConnection.feature</span>
+  <span class="name">DemoKarate/feature/UserDetailsPost.feature</span>
 
 
 </div>
 
-        <div class="description indention">Connection to Database</div>
+        <div class="description indention">Post user details</div>
 
         <div class="elements inner-level">
 
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.220</span>
+  <span class="lead-duration duration">0.006</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -230,9 +230,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def config = { username: 'dw_user', password: 'Welcome1!', url: 'jdbc:oracle:thin:@10.188.193.183:1521:INFADB', driverClassName: 'oracle.jdbc.driver.OracleDriver' }</span>
+  <span class="name">def requestpayload = read('../utils/Userdetails.json')</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>17:05:50.588 Testsuite executed in Environment</pre>
+        <pre>13:20:20.877 Testsuite executed in Environment</pre>
       </div>
     </div>
   </div>
@@ -267,36 +267,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def DbUtils = Java.type('DemoKarate.feature.DbUtils')</span>
+  <span class="name">header Content-Type = 'application/json'</span>
 
-  <span class="lead-duration duration">0.014</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def db = new DbUtils(config)</span>
-
-  <span class="lead-duration duration">0.206</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -334,14 +307,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.191</span>
+  <span class="lead-duration duration">5.587</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name"></span>
+  <span class="name">Post UserDetails to fetch ID's</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -373,11 +346,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def employees = db.readRows(&quot;select * from B_EMP&quot;)</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://reqres.in/api/users'</span>
 
-  <span class="lead-duration duration">1.178</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -400,11 +373,65 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print 'DB employees list', employees</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestpayload</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param delay = 5</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">5.574</span>
 
 </div>
 
@@ -422,71 +449,35 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>17:05:52.076 [print] DB employees list [
-  {
-    &quot;ENAME&quot;: &quot;STARC&quot;,
-    &quot;ENO&quot;: 1,
-    &quot;LOC&quot;: &quot;AUS&quot;,
-    &quot;SAL&quot;: 1000,
-    &quot;DNO&quot;: 10
-  },
-  {
-    &quot;ENAME&quot;: &quot;JOFRA&quot;,
-    &quot;ENO&quot;: 2,
-    &quot;LOC&quot;: &quot;ENG&quot;,
-    &quot;SAL&quot;: 2000,
-    &quot;DNO&quot;: 20
-  },
-  {
-    &quot;ENAME&quot;: &quot;AMIR&quot;,
-    &quot;ENO&quot;: 3,
-    &quot;LOC&quot;: &quot;PAK&quot;,
-    &quot;SAL&quot;: 3000,
-    &quot;DNO&quot;: 30
-  },
-  {
-    &quot;ENAME&quot;: &quot;FAF DUPL&quot;,
-    &quot;ENO&quot;: 4,
-    &quot;LOC&quot;: &quot;SA&quot;,
-    &quot;SAL&quot;: 4000,
-    &quot;DNO&quot;: 10
-  },
-  {
-    &quot;ENAME&quot;: &quot;Koganti&quot;,
-    &quot;ENO&quot;: 5,
-    &quot;LOC&quot;: &quot;AFG&quot;,
-    &quot;SAL&quot;: 5000,
-    &quot;DNO&quot;: 40
-  },
-  {
-    &quot;ENAME&quot;: &quot;BOLT&quot;,
-    &quot;ENO&quot;: 6,
-    &quot;LOC&quot;: &quot;NZ&quot;,
-    &quot;SAL&quot;: 7000,
-    &quot;DNO&quot;: 30
-  },
-  {
-    &quot;ENAME&quot;: &quot;JOHN&quot;,
-    &quot;ENO&quot;: 9,
-    &quot;LOC&quot;: &quot;ENG&quot;,
-    &quot;SAL&quot;: 9000,
-    &quot;DNO&quot;: 20
-  },
-  {
-    &quot;ENAME&quot;: &quot;SUMSHINE&quot;,
-    &quot;ENO&quot;: 11,
-    &quot;LOC&quot;: &quot;AUS&quot;,
-    &quot;SAL&quot;: 1000,
-    &quot;DNO&quot;: 11
-  },
-  {
-    &quot;ENAME&quot;: &quot;Kishore&quot;,
-    &quot;ENO&quot;: 7,
-    &quot;LOC&quot;: &quot;CPT&quot;,
-    &quot;SAL&quot;: 7400,
-    &quot;DNO&quot;: 70
-  }
-]</pre>
+        <pre>13:20:20.902 request:
+1 &gt; POST https://reqres.in/api/users?delay=5
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 36
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{&quot;name&quot;:&quot;yogesh&quot;,&quot;job&quot;:&quot;Automation&quot;}
+
+13:20:26.470 response time in milliseconds: 5567.00
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 60d3d8f48a2bd9ac-SIN
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 86
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 06 Jan 2021 07:50:25 GMT
+1 &lt; Etag: W/&quot;56-O852TjTtKLFbJFuYQvktslXrZ8c&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=JqQHFlAU1nHT67o9L2rJ4jqa8vEHebM5gcCRAaGHgtZyF7xs%2Bnt%2BGUCt%2FFh%2B5f96%2BCaXvbIPwPu1QqR7BIcrFSY3UAZLUfpQc28%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=deb87f73f1e5cd21e10469f5e2025d4661609919419; expires=Fri, 05-Feb-21 07:50:19 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 077845ecd40000d9acb2185000000001
+{&quot;name&quot;:&quot;yogesh&quot;,&quot;job&quot;:&quot;Automation&quot;,&quot;id&quot;:&quot;170&quot;,&quot;createdAt&quot;:&quot;2021-01-06T07:50:24.905Z&quot;}</pre>
       </div>
     </div>
   </div>
@@ -501,9 +492,36 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">match employees[*].ENAME contains 'STARC'</span>
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print 'Response ID', response</span>
 
   <span class="lead-duration duration">0.002</span>
 
@@ -517,6 +535,21 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>13:20:26.475 [print] Response ID {
+  &quot;createdAt&quot;: &quot;2021-01-06T07:50:24.905Z&quot;,
+  &quot;name&quot;: &quot;yogesh&quot;,
+  &quot;id&quot;: &quot;170&quot;,
+  &quot;job&quot;: &quot;Automation&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
 
 
 

@@ -1,22 +1,22 @@
-@ignore
+
 Feature: E2E testing
 
   Background:
-    * url 'http://dummy.restapiexample.com/'
+    * url 'https://reqres.in/'
 
-    Scenario Outline: Create UserDetails <name>
-      Given path 'api/v1/create'
+    Scenario Outline: Create UserDetails
+      Given path 'api/users'
       * request {"name":<name>,"salary":<salary>,"age":<age>}
       When method POST
-      Then status 200
+      Then status 201
       Then print 'print UserDetails',response
       * def userDetailsID = response
 
-      Given path 'api/v1/employee/'+ userDetailsID.data.id
-      When method GET
-      Then status 200
-      Then print 'Print User ID',response
-      And match response.data contains {id:'#(userDetailsID.data.id)'}
+#      Given path 'api/v1/employee/'+ userDetailsID.data.id
+#      When method GET
+#      Then status 200
+#      Then print 'Print User ID',response
+#      And match response.data contains {id:'#(userDetailsID.data.id)'}
 
 
       Examples:
