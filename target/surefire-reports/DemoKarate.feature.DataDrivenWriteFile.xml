@@ -1,0 +1,15 @@
+<testsuite failures="0" name="DemoKarate/feature/DataDrivenWriteFile.feature" skipped="0" tests="1" time="1.41084">
+  <testcase classname="DemoKarate.feature.DataDrivenWriteFile" name="Export API response to txt file" time="1.41084">
+    <system-out>* url 'https://reqres.in' ................................................. passed
+Given path '/api/users' ................................................... passed
+And param page = '2' ...................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+Then print 'List of UserDetails', data .................................... passed
+* def callFunction = ...................................................... passed
+* def userDetails = call callFunction data ................................ passed
+* def javaDemo = Java.type('DemoKarate.feature.writeDataToFile') .......... passed
+* def result = javaDemo.writeData(userDetails) ............................ passed</system-out>
+  </testcase>
+</testsuite>
