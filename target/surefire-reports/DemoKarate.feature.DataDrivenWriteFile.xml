@@ -1,5 +1,5 @@
-<testsuite failures="0" name="DemoKarate/feature/DataDrivenWriteFile.feature" skipped="0" tests="1" time="1.41084">
-  <testcase classname="DemoKarate.feature.DataDrivenWriteFile" name="Export API response to txt file" time="1.41084">
+<testsuite failures="0" name="DemoKarate/feature/DataDrivenWriteFile.feature" skipped="0" tests="1" time="3.497235">
+  <testcase classname="DemoKarate.feature.DataDrivenWriteFile" name="Export API response to txt file" time="3.497235">
     <system-out>* url 'https://reqres.in' ................................................. passed
 Given path '/api/users' ................................................... passed
 And param page = '2' ...................................................... passed

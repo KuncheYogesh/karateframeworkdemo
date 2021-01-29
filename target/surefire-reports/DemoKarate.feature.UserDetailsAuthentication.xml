@@ -1,5 +1,5 @@
-<testsuite failures="0" name="DemoKarate/feature/UserDetailsAuthentication.feature" skipped="0" tests="1" time="0.616689">
-  <testcase classname="DemoKarate.feature.UserDetailsAuthentication" name="Generate Authentication Token" time="0.616689">
+<testsuite failures="0" name="DemoKarate/feature/UserDetailsAuthentication.feature" skipped="0" tests="1" time="0.601524">
+  <testcase classname="DemoKarate.feature.UserDetailsAuthentication" name="Generate Authentication Token" time="0.601524">
     <system-out>* url 'https://reqres.in/api/register' .................................... passed
 And form field email = 'eve.holt@reqres.in', .............................. passed
 And form field password = 'pistol' ........................................ passed

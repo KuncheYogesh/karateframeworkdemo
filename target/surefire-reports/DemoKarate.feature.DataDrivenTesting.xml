@@ -1,5 +1,5 @@
-<testsuite failures="0" name="DemoKarate/feature/DataDrivenTesting.feature" skipped="0" tests="4" time="3.408225">
-  <testcase classname="DemoKarate.feature.DataDrivenTesting" name="Create UserDetails" time="1.584706">
+<testsuite failures="0" name="DemoKarate/feature/DataDrivenTesting.feature" skipped="0" tests="4" time="5.299887">
+  <testcase classname="DemoKarate.feature.DataDrivenTesting" name="Create UserDetails" time="3.437671">
     <system-out>* url 'https://reqres.in/' ................................................ passed
 Given path 'api/users' .................................................... passed
 * request {"name":Yogesh,"salary":1000000,"age":33} ....................... passed
@@ -8,7 +8,7 @@ Then status 201 ........................................................... pass
 Then print 'print UserDetails',response ................................... passed
 * def userDetailsID = response ............................................ passed</system-out>
   </testcase>
-  <testcase classname="DemoKarate.feature.DataDrivenTesting" name="Create UserDetails" time="0.646847">
+  <testcase classname="DemoKarate.feature.DataDrivenTesting" name="Create UserDetails" time="0.691194">
     <system-out>* url 'https://reqres.in/' ................................................ passed
 Given path 'api/users' .................................................... passed
 * request {"name":Yogesh,"salary":1000000,"age":33} ....................... passed
@@ -24,7 +24,7 @@ Then status 201 ........................................................... pass
 Then print 'print UserDetails',response ................................... passed
 * def userDetailsID = response ............................................ passed</system-out>
   </testcase>
-  <testcase classname="DemoKarate.feature.DataDrivenTesting" name="Create UserDetails" time="0.585989">
+  <testcase classname="DemoKarate.feature.DataDrivenTesting" name="Create UserDetails" time="0.580897">
     <system-out>* url 'https://reqres.in/' ................................................ passed
 Given path 'api/users' .................................................... passed
 * request {"name":Yogesh,"salary":1000000,"age":33} ....................... passed
@@ -47,7 +47,7 @@ Then status 201 ........................................................... pass
 Then print 'print UserDetails',response ................................... passed
 * def userDetailsID = response ............................................ passed</system-out>
   </testcase>
-  <testcase classname="DemoKarate.feature.DataDrivenTesting" name="Create UserDetails" time="0.590683">
+  <testcase classname="DemoKarate.feature.DataDrivenTesting" name="Create UserDetails" time="0.590124">
     <system-out>* url 'https://reqres.in/' ................................................ passed
 Given path 'api/users' .................................................... passed
 * request {"name":Yogesh,"salary":1000000,"age":33} ....................... passed
