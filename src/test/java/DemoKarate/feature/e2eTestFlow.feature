@@ -1,4 +1,4 @@
-
+@ignore
 Feature: E2E test flow of user details
 
   Background:
