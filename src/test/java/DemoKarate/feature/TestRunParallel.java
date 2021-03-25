@@ -9,6 +9,7 @@ import java.util.Collection;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.intuit.karate.core.ScenarioResult;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import net.masterthought.cucumber.Configuration;
@@ -25,6 +26,12 @@ public class TestRunParallel {
         Results results = Runner.path("classpath:DemoKarate").tags("~@ignore").parallel(5);
         generateReport(results.getReportDir());
         //Assert.assertEquals(results.getFailCount(), results.getErrorMessages());
+        List<ScenarioResult> res = new ArrayList<ScenarioResult>();
+        res = results.getScenarioResults();
+
+        for(ScenarioResult abc : res){
+            System.out.println("--->"+abc.getScenario().getFeature().getResource().getPackageQualifiedName());
+        }
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
 
     }

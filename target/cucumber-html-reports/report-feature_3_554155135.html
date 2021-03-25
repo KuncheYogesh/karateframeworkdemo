@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: DemoKarate/feature/UserDetailsAuthentication.feature</title>
+<title>Cucumber Reports  - Feature: DemoKarate/feature/generateRandomString.feature</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Karate_Intellij</td>
-      <td>29 Jan 2021, 15:06</td>
+      <td>25 Mar 2021, 15:09</td>
     </tr>
   </tbody>
 </table>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">DemoKarate/feature/UserDetailsAuthentication.feature</td>
-          <td      class="passed"    >8</td>
+          <td class="tagname">DemoKarate/feature/generateRandomString.feature</td>
+          <td      class="passed"    >13</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">8</td>
+          <td class="total">13</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="418582032">0.418</td>
+          <td class="duration" data-value="3976226570">3.976</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,12 +173,12 @@ $(document).ready(function() {
 
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">DemoKarate/feature/UserDetailsAuthentication.feature</span>
+  <span class="name">DemoKarate/feature/generateRandomString.feature</span>
 
 
 </div>
 
-        <div class="description indention">API Authentication</div>
+        <div class="description indention">Generate random string function</div>
 
         <div class="elements inner-level">
 
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.023</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -230,9 +230,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">url 'https://reqres.in/api/register'</span>
+  <span class="name">header Content-Type = 'application/json'</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>15:06:32.696 Testsuite executed in Environment</pre>
+        <pre>15:09:35.901 Testsuite executed in Environment</pre>
       </div>
     </div>
   </div>
@@ -280,14 +280,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.415</span>
+  <span class="lead-duration duration">3.952</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Generate Authentication Token</span>
+  <span class="name">Using string in request</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -319,9 +319,143 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">form field email = 'eve.holt@reqres.in',</span>
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random_string =</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>function(s) {
+    var text = &quot;&quot;;
+    var possible = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&quot;;
+    for (var i = 0; i &lt; s; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+    return text;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def string =  random_string(5)</span>
+
+  <span class="lead-duration duration">0.086</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match string == '#string'</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Random string generated',string</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:09:36.157 [print] Random string generated OIsnG</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://reqres.in/api/users'</span>
 
   <span class="lead-duration duration">0.003</span>
 
@@ -348,9 +482,36 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">form field password = 'pistol'</span>
+  <span class="name">request { name: '#(string)', job: 'Automation', company: 'TEK' }</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param delay = 2</span>
+
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -377,166 +538,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.404</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>15:06:32.712 request:
-1 &gt; POST https://reqres.in/api/register
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 42
-1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-email=eve.holt%40reqres.in&amp;password=pistol
-
-15:06:33.114 response time in milliseconds: 401.17
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 6191f7afbfd6de2d-BOM
-1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 36
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Fri, 29 Jan 2021 09:36:13 GMT
-1 &lt; Etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
-1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=%2F2EPapSpDV%2By8zbtl%2F%2FL85j1mrOehwCGe1N4ignyv7NbroeVFeYVsx5yjN92zQFPgumE9D0B%2F3hBP4RcyAAMVXuRlCRdZqQXNOU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d92589eade55c736742037919e7c5c5a11611912972; expires=Sun, 28-Feb-21 09:36:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 07ef1921d10000de2deb97f000000001
-{&quot;id&quot;:4,&quot;token&quot;:&quot;QpwL5tke4Pnpja7X4&quot;}</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 200</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">print 'Token Id is', response</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>15:06:33.116 [print] Token Id is {
-  &quot;id&quot;: 4,
-  &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
-}</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def accessToken = response.token</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">print 'Access Token is',accessToken</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.806</span>
 
 </div>
 
@@ -554,7 +556,170 @@ email=eve.holt%40reqres.in&amp;password=pistol
           <a>Doc string</a>
       </div>
       <div id="msg-8" class="collapse collapsable-details">
-        <pre>15:06:33.117 [print] Access Token is QpwL5tke4Pnpja7X4</pre>
+        <pre>15:09:37.002 request:
+1 &gt; POST https://reqres.in/api/users?delay=2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 51
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+{&quot;name&quot;:&quot;OIsnG&quot;,&quot;job&quot;:&quot;Automation&quot;,&quot;company&quot;:&quot;TEK&quot;}
+
+15:09:39.986 response time in milliseconds: 2984.05
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 63572c4878be1a01-SIN
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 101
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 25 Mar 2021 09:39:38 GMT
+1 &lt; Etag: W/&quot;65-WmGV4YD/dYclzlHCJPPdLB5mwUc&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=EFv%2BQnxb9qDItC6vjxI8LmQSshrKux6ro%2FhzsqSJarwaS2j3ars1lN4XGtelXpJsgoiUpbd14QpYEgeePUYNQiD0qg1BcWfX5d4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d1f203d7d6313f708242e6e7c71fffaff1616665176; expires=Sat, 24-Apr-21 09:39:36 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+1 &lt; cf-request-id: 090a5a015200001a0115951000000001
+{&quot;name&quot;:&quot;OIsnG&quot;,&quot;job&quot;:&quot;Automation&quot;,&quot;company&quot;:&quot;TEK&quot;,&quot;id&quot;:&quot;441&quot;,&quot;createdAt&quot;:&quot;2021-03-25T09:39:38.694Z&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print 'Response ID', response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>15:09:39.989 [print] Response ID {
+  &quot;createdAt&quot;: &quot;2021-03-25T09:39:38.694Z&quot;,
+  &quot;name&quot;: &quot;OIsnG&quot;,
+  &quot;company&quot;: &quot;TEK&quot;,
+  &quot;id&quot;: &quot;441&quot;,
+  &quot;job&quot;: &quot;Automation&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseID = response.id</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Response ID generated for request is ',responseID</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>15:09:39.993 [print] Response ID generated for request is  441</pre>
       </div>
     </div>
   </div>
