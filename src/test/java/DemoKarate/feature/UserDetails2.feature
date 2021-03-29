@@ -12,6 +12,7 @@ Feature: Check users list and Update the first user name with the last user
 
   Scenario: UserDetails2 - Get the userdetails of id 3
     Given url sourceurl
+    Given path '/3'
     #sourceurl from karate-config.js
     When method GET
     Then status 200

@@ -1,6 +1,6 @@
 function fn(){
    var config = {
-     sourceurl : 'https://reqres.in/api/users/3'
+     sourceurl : 'https://reqres.in/api/users'
    }
    var env = karate.env
    karate.log("Testsuite executed in Environment",env)
