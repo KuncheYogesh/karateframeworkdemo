@@ -8,7 +8,7 @@ Feature: Check users list and Update the first user name with the last user
     * def response_expected = read('../utils/result2.json')
 
 @smoke
-  Scenario: Get the userdetails of id 2
+  Scenario: UserDetails - Get the userdetails of id 2
     Given path '/api/users/2'
     When method GET
     Then status 200
@@ -21,7 +21,7 @@ Feature: Check users list and Update the first user name with the last user
     And match designation == null
 
 @regression
-  Scenario: Get the userdetails of id 4
+  Scenario: UserDetails - Get the userdetails of id 4
     Given path '/api/users/4'
     When method GET
     Then status 200

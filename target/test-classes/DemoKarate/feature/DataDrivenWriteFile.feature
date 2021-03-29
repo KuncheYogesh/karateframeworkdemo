@@ -3,7 +3,7 @@ Feature: DataDriven write data to external file
   Background:
     * url 'https://reqres.in'
 
-    Scenario: Export API response to txt file
+    Scenario: DataDrivenWriteFile - Export API response to text file
       Given path '/api/users'
       And param page = '2'
       When method GET

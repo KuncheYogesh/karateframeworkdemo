@@ -1,10 +1,10 @@
-
+@ignore
 Feature: E2E testing
 
   Background:
     * url 'https://reqres.in/'
 
-    Scenario Outline: Create UserDetails
+    Scenario Outline: DataDrivenTesting - Create UserDetails ID's
       Given path 'api/users'
       * request {"name":<name>,"salary":<salary>,"age":<age>}
       When method POST

@@ -1,82 +1,39 @@
-15:09:37.002 request:
-1 > POST https://reqres.in/api/users
+15:08:46.589 Testsuite executed in Environment  
+15:08:47.368 request:
+1 > POST https://reqres.in/api/users?delay=5
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 43
+1 > Content-Length: 36
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-{"name":"Yogesh","salary":1000000,"age":33}
+{"name":"yogesh","job":"Automation"}
 
-15:09:37.966 response time in milliseconds: 962.94
+15:08:53.260 response time in milliseconds: 5891.84
 1 < 201
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 63572c48795701ab-SIN
+1 < CF-RAY: 6378207c4ced1a15-SIN
 1 < Connection: keep-alive
-1 < Content-Length: 93
+1 < Content-Length: 86
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Mar 2021 09:39:36 GMT
-1 < Etag: W/"5d-lwD6wMsFIwvYvWA1x3VHXIkgLMo"
+1 < Date: Mon, 29 Mar 2021 09:38:48 GMT
+1 < Etag: W/"56-s7fEEuYTOZjzxgzLX1h8U5AKg5M"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=AIPRXibdJviyUquv1Iw1O58MaLi4dhh3rHbi2ZmjN6ns74d1WHHTfapX9JGvzD0D%2BkwFIBMmP35%2BjHTblT8dBj0HjuLA8yzJrKg%3D"}]}
+1 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=%2F%2BYeDjGrd2trCicA3jiFHd6NnRISWFeVTM%2Bcy2Sl0dxkyrF1gHD84Uceu2IK0WdpQUWKg%2FktqvPA1X2vhNj2W4ERqSt7H%2B5K0xc%3D"}]}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d85d3c7b396ec668fd8c33816ba52cac31616665176; expires=Sat, 24-Apr-21 09:39:36 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=d21da7dfe0421fa75ab27245e849f1b3a1617010723; expires=Wed, 28-Apr-21 09:38:43 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 090a5a0151000001abf9910000000001
-{"name":"Yogesh","salary":1000000,"age":33,"id":"219","createdAt":"2021-03-25T09:39:36.685Z"}
+1 < cf-request-id: 091ef2a1ac00001a15f3920000000001
+{"name":"yogesh","job":"Automation","id":"262","createdAt":"2021-03-29T09:38:48.556Z"}
 
-15:09:37.970 [print] print UserDetails {
-  "createdAt": "2021-03-25T09:39:36.685Z",
-  "name": "Yogesh",
-  "id": "219",
-  "salary": 1000000,
-  "age": 33
-}
-
-15:09:37.977 request:
-1 > POST https://reqres.in/api/users
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 38
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: reqres.in
-1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-{"name":"sam","salary":33000,"age":25}
-
-15:09:38.565 response time in milliseconds: 587.98
-1 < 201
-1 < Access-Control-Allow-Origin: *
-1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 63572c4c0e78c363-SIN
-1 < Connection: keep-alive
-1 < Content-Length: 88
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Mar 2021 09:39:37 GMT
-1 < Etag: W/"58-/LCzkp0TD13ASAzxNE1auuKrCBY"
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=qsR28H5at7O%2Bi4eEqbEKSrpG%2Fnbi9nmpi%2BMOKgDNuvT%2FvcJT7Hipy7LxHJ4ommelhwqyV6LDfYUKcPpU2MUnce1lx%2F9ZOLOF820%3D"}],"max_age":604800}
-1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d69bad39649eb9aeefa2aff6a5a33daac1616665176; expires=Sat, 24-Apr-21 09:39:36 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 < Via: 1.1 vegur
-1 < X-Powered-By: Express
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 090a5a03830000c36313813000000001
-{"name":"sam","salary":33000,"age":25,"id":"455","createdAt":"2021-03-25T09:39:37.270Z"}
-
-15:09:38.567 [print] print UserDetails {
-  "createdAt": "2021-03-25T09:39:37.270Z",
-  "name": "sam",
-  "id": "455",
-  "salary": 33000,
-  "age": 25
-}
-
-  "id": "77",
+15:08:53.269 [print] Response ID {
+  "createdAt": "2021-03-29T09:38:48.556Z",
+  "name": "yogesh",
+  "id": "262",
   "job": "Automation"
 }
 

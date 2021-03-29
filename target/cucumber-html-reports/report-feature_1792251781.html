@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: DemoKarate/feature/generateRandomString.feature</title>
+<title>Cucumber Reports  - Feature: DemoKarate/feature/DataDrivenWriteFile.feature</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Karate_Intellij</td>
-      <td>25 Mar 2021, 15:09</td>
+      <td>29 Mar 2021, 15:08</td>
     </tr>
   </tbody>
 </table>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">DemoKarate/feature/generateRandomString.feature</td>
-          <td      class="passed"    >13</td>
+          <td class="tagname">DemoKarate/feature/DataDrivenWriteFile.feature</td>
+          <td      class="passed"    >11</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">13</td>
+          <td class="total">11</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="3976226570">3.976</td>
+          <td class="duration" data-value="1312116845">1.312</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,12 +173,12 @@ $(document).ready(function() {
 
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">DemoKarate/feature/generateRandomString.feature</span>
+  <span class="name">DemoKarate/feature/DataDrivenWriteFile.feature</span>
 
 
 </div>
 
-        <div class="description indention">Generate random string function</div>
+        <div class="description indention">DataDriven write data to external file</div>
 
         <div class="elements inner-level">
 
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.023</span>
+  <span class="lead-duration duration">0.009</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -230,9 +230,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">header Content-Type = 'application/json'</span>
+  <span class="name">url 'https://reqres.in'</span>
 
-  <span class="lead-duration duration">0.023</span>
+  <span class="lead-duration duration">0.009</span>
 
 </div>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>15:09:35.901 Testsuite executed in Environment</pre>
+        <pre>15:08:46.589 Testsuite executed in Environment</pre>
       </div>
     </div>
   </div>
@@ -280,14 +280,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">3.952</span>
+  <span class="lead-duration duration">1.302</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Using string in request</span>
+  <span class="name">DataDrivenWriteFile - Export API response to text file</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -319,172 +319,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def random_string =</span>
-
-  <span class="lead-duration duration">0.017</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>function(s) {
-    var text = &quot;&quot;;
-    var possible = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&quot;;
-    for (var i = 0; i &lt; s; i++)
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
-    return text;
-}</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def string =  random_string(5)</span>
-
-  <span class="lead-duration duration">0.086</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">match string == '#string'</span>
-
-  <span class="lead-duration duration">0.008</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print 'Random string generated',string</span>
-
-  <span class="lead-duration duration">0.006</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>15:09:36.157 [print] Random string generated OIsnG</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">url 'https://reqres.in/api/users'</span>
+  <span class="name">path '/api/users'</span>
 
-  <span class="lead-duration duration">0.003</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">request { name: '#(string)', job: 'Automation', company: 'TEK' }</span>
-
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -509,9 +348,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">param delay = 2</span>
+  <span class="name">param page = '2'</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -536,9 +375,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">method post</span>
+  <span class="name">method GET</span>
 
-  <span class="lead-duration duration">3.806</span>
+  <span class="lead-duration duration">1.208</span>
 
 </div>
 
@@ -552,40 +391,40 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Doc string</a>
       </div>
-      <div id="msg-8" class="collapse collapsable-details">
-        <pre>15:09:37.002 request:
-1 &gt; POST https://reqres.in/api/users?delay=2
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>15:08:47.367 request:
+1 &gt; GET https://reqres.in/api/users?page=2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 51
-1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: reqres.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-{&quot;name&quot;:&quot;OIsnG&quot;,&quot;job&quot;:&quot;Automation&quot;,&quot;company&quot;:&quot;TEK&quot;}
 
-15:09:39.986 response time in milliseconds: 2984.05
-1 &lt; 201
+15:08:47.888 response time in milliseconds: 515.61
+1 &lt; 200
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 63572c4878be1a01-SIN
+1 &lt; Age: 2150
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 6378207c485801dd-SIN
+1 &lt; Cache-Control: max-age=14400
 1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 101
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 25 Mar 2021 09:39:38 GMT
-1 &lt; Etag: W/&quot;65-WmGV4YD/dYclzlHCJPPdLB5mwUc&quot;
+1 &lt; Date: Mon, 29 Mar 2021 09:38:43 GMT
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=EFv%2BQnxb9qDItC6vjxI8LmQSshrKux6ro%2FhzsqSJarwaS2j3ars1lN4XGtelXpJsgoiUpbd14QpYEgeePUYNQiD0qg1BcWfX5d4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;max_age&quot;:604800,&quot;report_to&quot;:&quot;cf-nel&quot;}
+1 &lt; Report-To: {&quot;max_age&quot;:604800,&quot;group&quot;:&quot;cf-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=b4jI9SmAa22bVhZDbwXtlURFrzi3ysD6nKjLZrdytWfDm%2B59EffS8aU1dCmZh8vgduni%2FMECVxix0R6YSFufUjr4xkuwkrjX2YA%3D&quot;}]}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d1f203d7d6313f708242e6e7c71fffaff1616665176; expires=Sat, 24-Apr-21 09:39:36 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Set-Cookie: __cfduid=df1de22346ffbb7bf8425a410bf610b401617010723; expires=Wed, 28-Apr-21 09:38:43 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
-1 &lt; cf-request-id: 090a5a015200001a0115951000000001
-{&quot;name&quot;:&quot;OIsnG&quot;,&quot;job&quot;:&quot;Automation&quot;,&quot;company&quot;:&quot;TEK&quot;,&quot;id&quot;:&quot;441&quot;,&quot;createdAt&quot;:&quot;2021-03-25T09:39:38.694Z&quot;}</pre>
+1 &lt; cf-request-id: 091ef2a1ad000001dd43bd4000000001
+{&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</pre>
       </div>
     </div>
   </div>
@@ -602,7 +441,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">status 201</span>
+  <span class="name">status 200</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -627,11 +466,38 @@ $(document).ready(function() {
       <div class="step">
 
 
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def data = response.data</span>
+
+  <span class="lead-duration duration">0.020</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">print 'Response ID', response</span>
+  <span class="name">print 'List of UserDetails', data</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -645,16 +511,96 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
           <a>Doc string</a>
       </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>15:09:39.989 [print] Response ID {
-  &quot;createdAt&quot;: &quot;2021-03-25T09:39:38.694Z&quot;,
-  &quot;name&quot;: &quot;OIsnG&quot;,
-  &quot;company&quot;: &quot;TEK&quot;,
-  &quot;id&quot;: &quot;441&quot;,
-  &quot;job&quot;: &quot;Automation&quot;
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:08:47.932 [print] List of UserDetails [
+  {
+    &quot;last_name&quot;: &quot;Lawson&quot;,
+    &quot;id&quot;: 7,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Michael&quot;,
+    &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Ferguson&quot;,
+    &quot;id&quot;: 8,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Lindsay&quot;,
+    &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Funke&quot;,
+    &quot;id&quot;: 9,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Tobias&quot;,
+    &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Fields&quot;,
+    &quot;id&quot;: 10,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Byron&quot;,
+    &quot;email&quot;: &quot;byron.fields@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Edwards&quot;,
+    &quot;id&quot;: 11,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;George&quot;,
+    &quot;email&quot;: &quot;george.edwards@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Howell&quot;,
+    &quot;id&quot;: 12,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Rachel&quot;,
+    &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def callFunction =</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>function(arg){
+ for(i=0; i&lt;arg.length; i++){
+  if(arg[i].id == 8){
+   return arg[i]
+  }
+ }
 }</pre>
       </div>
     </div>
@@ -672,9 +618,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def responseID = response.id</span>
+  <span class="name">def userDetails = call callFunction data</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.020</span>
 
 </div>
 
@@ -699,9 +645,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">print 'Response ID generated for request is ',responseID</span>
+  <span class="name">def javaDemo = Java.type('DemoKarate.feature.writeDataToFile')</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -713,16 +659,33 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
-          <a>Doc string</a>
+
+
+
+
+
+
+
       </div>
-      <div id="msg-10" class="collapse collapsable-details">
-        <pre>15:09:39.993 [print] Response ID generated for request is  441</pre>
-      </div>
-    </div>
-  </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = javaDemo.writeData(userDetails)</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
 
 
 

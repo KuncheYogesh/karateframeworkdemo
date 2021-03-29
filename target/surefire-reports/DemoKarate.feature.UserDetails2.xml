@@ -1,5 +1,5 @@
-<testsuite failures="0" name="DemoKarate/feature/UserDetails2.feature" skipped="0" tests="1" time="1.922353">
-  <testcase classname="DemoKarate.feature.UserDetails2" name="Get the userdetails of id 3" time="1.922353">
+<testsuite failures="0" name="DemoKarate/feature/UserDetails2.feature" skipped="0" tests="1" time="1.480287">
+  <testcase classname="DemoKarate.feature.UserDetails2" name="UserDetails2 - Get the userdetails of id 3" time="1.480287">
     <system-out>* header Accept = 'application/json' ...................................... passed
 * def response_expected = read('../utils/result2.json') ................... passed
 * def feature = read('UserDetails.feature@smoke') ......................... passed

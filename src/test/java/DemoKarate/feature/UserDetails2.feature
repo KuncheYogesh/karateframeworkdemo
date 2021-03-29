@@ -10,7 +10,7 @@ Feature: Check users list and Update the first user name with the last user
     * def feature = read('UserDetails.feature@smoke')
     * def finalresult = call feature
 
-  Scenario: Get the userdetails of id 3
+  Scenario: UserDetails2 - Get the userdetails of id 3
     Given url sourceurl
     #sourceurl from karate-config.js
     When method GET

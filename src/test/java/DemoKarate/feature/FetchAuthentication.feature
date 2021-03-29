@@ -1,5 +1,5 @@
 
-Feature: Fetch Authentication Token
+Feature: DataDrivenTesting - Fetch Authentication Token
 
   Background:
     * def Authentication = call read('UserDetailsAuthentication.feature')
@@ -7,7 +7,7 @@ Feature: Fetch Authentication Token
     * def authToken = Authentication.accessToken
     * def requestpayload = read('../utils/Userdetails.json')
 
-    Scenario: Post call with Authentication
+    Scenario: FetchAuthentication - Post call with Authentication
 
       When url 'https://reqres.in/api/users'
       And header Authorization = authToken

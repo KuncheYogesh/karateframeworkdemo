@@ -1,5 +1,5 @@
 
-Feature: Post user details
+Feature: UserDetailsPost - Post user details
 
   Background:
     * def requestpayload = read('../utils/Userdetails.json')

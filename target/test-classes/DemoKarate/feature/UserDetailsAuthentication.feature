@@ -4,7 +4,7 @@ Feature: API Authentication
   Background:
     * url 'https://reqres.in/api/register'
 
-    Scenario: Generate Authentication Token
+    Scenario: UserDetailsAuthentication - Generate Authentication Token
 
       And form field email = 'eve.holt@reqres.in',
       And form field password = 'pistol'

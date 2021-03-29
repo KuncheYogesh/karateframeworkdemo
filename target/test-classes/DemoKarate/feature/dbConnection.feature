@@ -1,6 +1,5 @@
 @ignore
 
-  
 Feature: Connection to Database
 
   Background:
@@ -9,7 +8,7 @@ Feature: Connection to Database
     * def DbUtils = Java.type('DemoKarate.feature.DbUtils')
     * def db = new DbUtils(config)
 
-    Scenario:
+    Scenario: TestFlow - DbConnection - DB testing
 
       * def employees = db.readRows("select * from B_EMP")
        #select sal from B_EMP where ENAME = 'BOLT'

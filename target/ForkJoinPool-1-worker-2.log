@@ -1,165 +1,77 @@
-15:09:35.901 Testsuite executed in Environment  
-15:09:36.157 [print] Random string generated OIsnG
-15:09:37.002 request:
-1 > POST https://reqres.in/api/users?delay=2
+15:08:46.589 Testsuite executed in Environment  
+15:08:47.368 request:
+1 > POST https://reqres.in/api/register
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 51
-1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-{"name":"OIsnG","job":"Automation","company":"TEK"}
+email=eve.holt%40reqres.in&password=pistol
 
-15:09:39.986 response time in milliseconds: 2984.05
-1 < 201
+15:08:48.255 response time in milliseconds: 885.69
+1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 63572c4878be1a01-SIN
+1 < CF-RAY: 6378207c4dfe17bb-SIN
 1 < Connection: keep-alive
-1 < Content-Length: 101
+1 < Content-Length: 36
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Mar 2021 09:39:38 GMT
-1 < Etag: W/"65-WmGV4YD/dYclzlHCJPPdLB5mwUc"
+1 < Date: Mon, 29 Mar 2021 09:38:43 GMT
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=EFv%2BQnxb9qDItC6vjxI8LmQSshrKux6ro%2FhzsqSJarwaS2j3ars1lN4XGtelXpJsgoiUpbd14QpYEgeePUYNQiD0qg1BcWfX5d4%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=wZRzZ5HW21KUzeNOt5t2BsZdHipD3WMh6Y9YjljAVGSnZKfVgh5xSL4bsdHxFXxTSbFZ2xl6%2Bx54sutIzJ%2B8ZqZ9mz5GqtZJzJU%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d1f203d7d6313f708242e6e7c71fffaff1616665176; expires=Sat, 24-Apr-21 09:39:36 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=d992dd5be63e7dd4234dab9d00f6e44dd1617010723; expires=Wed, 28-Apr-21 09:38:43 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 090a5a015200001a0115951000000001
-{"name":"OIsnG","job":"Automation","company":"TEK","id":"441","createdAt":"2021-03-25T09:39:38.694Z"}
+1 < cf-request-id: 091ef2a1b0000017bbbb07c000000001
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
 
-15:09:39.989 [print] Response ID {
-  "createdAt": "2021-03-25T09:39:38.694Z",
-  "name": "OIsnG",
-  "company": "TEK",
-  "id": "441",
-  "job": "Automation"
+15:08:48.274 [print] Token Id is {
+  "id": 4,
+  "token": "QpwL5tke4Pnpja7X4"
 }
 
-15:09:39.993 [print] Response ID generated for request is  441
-cation/json; charset=UTF-8
+15:08:48.286 [print] Access Token is QpwL5tke4Pnpja7X4
+15:08:48.297 request:
+1 > POST https://reqres.in/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: QpwL5tke4Pnpja7X4
+1 > Connection: Keep-Alive
+1 > Content-Length: 36
+1 > Content-Type: application/json; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 {"name":"yogesh","job":"Automation"}
 
-15:07:16.355 response time in milliseconds: 566.45
+15:08:48.869 response time in milliseconds: 570.59
 1 < 201
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 635728d36b8319f5-SIN
+1 < CF-RAY: 637820802aff1a2a-SIN
 1 < Connection: keep-alive
 1 < Content-Length: 86
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Mar 2021 09:37:15 GMT
-1 < Etag: W/"56-sdpSz11ByAJuYnKluE3DMThQMC4"
+1 < Date: Mon, 29 Mar 2021 09:38:44 GMT
+1 < Etag: W/"56-FUAnGQvrmTurgAlJtrxGe+BVzpI"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=8MH0Ocd2KVWUtu86icSeQtDr1f2yyjZ8QWhaU9%2BfMmnW9yzMpMUoFmaozTLqYfn8qCfCxaTMzTdA7BKewhN%2FVNthAkgoL03vd%2FE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=WXDiA6G1X6EHugymZZzj56rptWqevcDxW9tlWNb03wC9rkU1ZCpTdLmaPqtijiunXAiw%2F1yxkoZvTwRwAaGA0DeIYkvaERo3WIQ%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=da3bad9a56a0d5fa583e579e7904400061616665034; expires=Sat, 24-Apr-21 09:37:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=d2abdce37c0d026d05d833d97c88dc0c71617010723; expires=Wed, 28-Apr-21 09:38:43 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 090a57d81d000019f5e1a87000000001
-{"name":"yogesh","job":"Automation","id":"338","createdAt":"2021-03-25T09:37:15.074Z"}
+1 < cf-request-id: 091ef2a41900001a2aa382c000000001
+{"name":"yogesh","job":"Automation","id":"612","createdAt":"2021-03-29T09:38:44.163Z"}
 
-15:07:16.358 [print] Authentication response {
-  "createdAt": "2021-03-25T09:37:15.074Z",
+15:08:48.876 [print] Authentication response {
+  "createdAt": "2021-03-29T09:38:44.163Z",
   "name": "yogesh",
-  "id": "338",
+  "id": "612",
   "job": "Automation"
-}
-
-George",
-    "email": "george.edwards@reqres.in"
-  },
-  {
-    "last_name": "Howell",
-    "id": 12,
-    "avatar": "https://reqres.in/img/faces/12-image.jpg",
-    "first_name": "Rachel",
-    "email": "rachel.howell@reqres.in"
-  }
-]
-
-13:16:39.548 request:
-1 > POST https://reqres.in/api/users
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 39
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: reqres.in
-1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-{"name":"Raj","salary":200000,"age":29}
-
-13:16:41.625 response time in milliseconds: 2076.75
-1 < 201
-1 < Access-Control-Allow-Origin: *
-1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 635686d9cfbd945b-NRT
-1 < Connection: keep-alive
-1 < Content-Length: 88
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Mar 2021 07:46:40 GMT
-1 < Etag: W/"58-XvyojZjILtbi6AcbdiKUWEr0Byc"
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=d5vdOh3r8fVYaJHPGWYbyJ%2BbwrkENe6l7NBmhWP505550K7PRUao9jdj4m8cCD485R0wR7X%2B6mYCtAjIUBrgOIvdrh%2Bj1FoSTIA%3D"}],"group":"cf-nel","max_age":604800}
-1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=db6c9a0756ce9a8a6f8ce5f2ed23bc6dd1616658400; expires=Sat, 24-Apr-21 07:46:40 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 < Via: 1.1 vegur
-1 < X-Powered-By: Express
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 0909f29c1c0000945b31834000000001
-{"name":"Raj","salary":200000,"age":29,"id":"25","createdAt":"2021-03-25T07:46:40.694Z"}
-
-13:16:41.626 [print] print UserDetails {
-  "createdAt": "2021-03-25T07:46:40.694Z",
-  "name": "Raj",
-  "id": "25",
-  "salary": 200000,
-  "age": 29
-}
-
-13:16:41.631 request:
-1 > POST https://reqres.in/api/users
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 38
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: reqres.in
-1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-{"name":"sam","salary":33000,"age":25}
-
-13:16:43.364 response time in milliseconds: 1733.33
-1 < 201
-1 < Access-Control-Allow-Origin: *
-1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 635686e43c6c1d7b-NRT
-1 < Connection: keep-alive
-1 < Content-Length: 88
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Mar 2021 07:46:42 GMT
-1 < Etag: W/"58-5ssxuF1zxOQ2rrMX0gLqfJs1gOw"
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=OnPdp71eyac%2FPwdMbcbtZ9KQPWmd%2FUoKMz8ThzhHGuoKxoQXZRVFlTVOP6XCOGYV80R7%2B3K%2Ftf1Dex3EjTC67ZrnEklMAPl0Hm0%3D"}],"group":"cf-nel","max_age":604800}
-1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=dd88c1229e120f587e7d07e9efabd91671616658401; expires=Sat, 24-Apr-21 07:46:41 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 < Via: 1.1 vegur
-1 < X-Powered-By: Express
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 0909f2a2a500001d7be02d4000000001
-{"name":"sam","salary":33000,"age":25,"id":"473","createdAt":"2021-03-25T07:46:42.402Z"}
-
-13:16:43.365 [print] print UserDetails {
-  "createdAt": "2021-03-25T07:46:42.402Z",
-  "name": "sam",
-  "id": "473",
-  "salary": 33000,
-  "age": 25
 }
 

@@ -3,7 +3,11 @@ package DemoKarate.feature;
 import com.intuit.karate.KarateOptions;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
+
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -28,10 +32,22 @@ public class TestRunParallel {
         //Assert.assertEquals(results.getFailCount(), results.getErrorMessages());
         List<ScenarioResult> res = new ArrayList<ScenarioResult>();
         res = results.getScenarioResults();
+        try {
+            BufferedWriter fw = new BufferedWriter(new FileWriter("Karate_feature_files.txt")) ;
+            for(ScenarioResult abc : res){
+                fw.write(abc.getScenario().getFeature().getResource().getPackageQualifiedName());
+                //fw.write(System.getProperty("line.seperator"));
+                //fw.write("   ---   ");
+                fw.newLine();
+                System.out.println("--->"+abc.getScenario().getFeature().getResource().getPackageQualifiedName());
 
-        for(ScenarioResult abc : res){
-            System.out.println("--->"+abc.getScenario().getFeature().getResource().getPackageQualifiedName());
+            }
+            fw.flush();
+            fw.close();
+        }catch (IOException e){
+            e.printStackTrace();
         }
+
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
 
     }

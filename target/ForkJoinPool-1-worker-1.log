@@ -1,155 +1,42 @@
-15:09:35.901 Testsuite executed in Environment  
-15:09:36.998 request:
-1 > GET https://reqres.in/api/users?page=2
+15:08:46.589 Testsuite executed in Environment  
+15:08:46.740 [print] Random string generated VJrhy
+15:08:47.368 request:
+1 > POST https://reqres.in/api/users?delay=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Host: reqres.in
-1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-
-15:09:37.613 response time in milliseconds: 610.17
-1 < 200
-1 < Access-Control-Allow-Origin: *
-1 < Age: 2517
-1 < CF-Cache-Status: HIT
-1 < CF-RAY: 63572c487e581aa8-SIN
-1 < Cache-Control: max-age=14400
-1 < Connection: keep-alive
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Mar 2021 09:39:36 GMT
-1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=OhdcW5n00OXah1yCseuz6dyNQdiCbusQC8MeNSQFVdIjs%2FmeKLNibnSEJps9xVAzicHnnuw4QIMiAshdkUI6uQEQUKNU9u7qOQk%3D"}],"max_age":604800}
-1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d942a422ec3ae8db8f6d176d120f9f8071616665176; expires=Sat, 24-Apr-21 09:39:36 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 < Transfer-Encoding: chunked
-1 < Vary: Accept-Encoding
-1 < Via: 1.1 vegur
-1 < X-Powered-By: Express
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 090a5a015000001aa87c04d000000001
-{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
-
-15:09:37.646 [print] List of UserDetails [
-  {
-    "last_name": "Lawson",
-    "id": 7,
-    "avatar": "https://reqres.in/img/faces/7-image.jpg",
-    "first_name": "Michael",
-    "email": "michael.lawson@reqres.in"
-  },
-  {
-    "last_name": "Ferguson",
-    "id": 8,
-    "avatar": "https://reqres.in/img/faces/8-image.jpg",
-    "first_name": "Lindsay",
-    "email": "lindsay.ferguson@reqres.in"
-  },
-  {
-    "last_name": "Funke",
-    "id": 9,
-    "avatar": "https://reqres.in/img/faces/9-image.jpg",
-    "first_name": "Tobias",
-    "email": "tobias.funke@reqres.in"
-  },
-  {
-    "last_name": "Fields",
-    "id": 10,
-    "avatar": "https://reqres.in/img/faces/10-image.jpg",
-    "first_name": "Byron",
-    "email": "byron.fields@reqres.in"
-  },
-  {
-    "last_name": "Edwards",
-    "id": 11,
-    "avatar": "https://reqres.in/img/faces/11-image.jpg",
-    "first_name": "George",
-    "email": "george.edwards@reqres.in"
-  },
-  {
-    "last_name": "Howell",
-    "id": 12,
-    "avatar": "https://reqres.in/img/faces/12-image.jpg",
-    "first_name": "Rachel",
-    "email": "rachel.howell@reqres.in"
-  }
-]
-
-15:09:37.749 request:
-1 > POST https://reqres.in/api/users
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 39
+1 > Content-Length: 51
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-{"name":"Raj","salary":200000,"age":29}
+{"name":"VJrhy","job":"Automation","company":"TEK"}
 
-15:09:38.324 response time in milliseconds: 574.91
+15:08:50.262 response time in milliseconds: 2892.94
 1 < 201
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 63572c4a9b0755ef-SIN
+1 < CF-RAY: 6378207c59f717b7-SIN
 1 < Connection: keep-alive
-1 < Content-Length: 89
+1 < Content-Length: 101
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Mar 2021 09:39:37 GMT
-1 < Etag: W/"59-sQCNsmCT35N3D9/g0Nkz6TM3y5M"
+1 < Date: Mon, 29 Mar 2021 09:38:45 GMT
+1 < Etag: W/"65-tBjrY4rEzU4XwcO1fo8BPHAiOEw"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=JhYVG1xfwiQ0tqG%2FLKaV4LGo%2FY98jRWChRflVnd2V0kKnYyHiTFNBwJ%2F%2BdlkgmmAvnwJ4Ftrw95ozWJ%2F7rCmfZpDR2XH5GPxGRc%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=tZYityTEvz%2FjbMCgJBowM%2B5kxliW8hsBgZUq5KzXRLffUIAq37vaaJAorsNvtWE06O0nZlMPCwcYReC387Ul7%2BBcQgD9UYuVcV0%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d0b1013c8150f88de73f356d14455bd3e1616665176; expires=Sat, 24-Apr-21 09:39:36 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=d6a358b70c45481cdd7521e7d19df11ea1617010723; expires=Wed, 28-Apr-21 09:38:43 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 090a5a029e000055ef6e1f4000000001
-{"name":"Raj","salary":200000,"age":29,"id":"653","createdAt":"2021-03-25T09:39:37.032Z"}
+1 < cf-request-id: 091ef2a1b4000017b7caa1a000000001
+{"name":"VJrhy","job":"Automation","company":"TEK","id":"592","createdAt":"2021-03-29T09:38:45.553Z"}
 
-15:09:38.325 [print] print UserDetails {
-  "createdAt": "2021-03-25T09:39:37.032Z",
-  "name": "Raj",
-  "id": "653",
-  "salary": 200000,
-  "age": 29
-}
-
-15:09:38.344 Testsuite executed in Environment  
-15:09:38.350 request:
-1 > POST https://reqres.in/api/users?delay=5
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 36
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: reqres.in
-1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-{"name":"yogesh","job":"Automation"}
-
-15:09:43.945 response time in milliseconds: 5593.72
-1 < 201
-1 < Access-Control-Allow-Origin: *
-1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 63572c4e5b7301b8-SIN
-1 < Connection: keep-alive
-1 < Content-Length: 86
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Mar 2021 09:39:42 GMT
-1 < Etag: W/"56-em83OYrLfG6xcqgalvhgV+Ru8+8"
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Y9Uszm7ldILjl7xXkIuFkaABo99UbKaLKNcmL9J7%2BDqELGzFCbJpCvKvBglQIsLWWuQeu6n1fm1WdclnVYwE6aLpz9B50cIqQno%3D"}],"max_age":604800}
-1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d7caa0542b6a468f3f2452db80165f85a1616665177; expires=Sat, 24-Apr-21 09:39:37 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 < Via: 1.1 vegur
-1 < X-Powered-By: Express
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 090a5a04fa000001b898a89000000001
-{"name":"yogesh","job":"Automation","id":"204","createdAt":"2021-03-25T09:39:42.636Z"}
-
-15:09:43.949 [print] Response ID {
-  "createdAt": "2021-03-25T09:39:42.636Z",
-  "name": "yogesh",
-  "id": "204",
+15:08:50.272 [print] Response ID {
+  "createdAt": "2021-03-29T09:38:45.553Z",
+  "name": "VJrhy",
+  "company": "TEK",
+  "id": "592",
   "job": "Automation"
 }
 
+15:08:50.278 [print] Response ID generated for request is  592
