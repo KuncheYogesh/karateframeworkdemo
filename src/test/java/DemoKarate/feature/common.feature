@@ -1,5 +1,5 @@
 @ignore
-Feature: Common js functions to reuse in different feature files
+Feature: Common - Common js functions to reuse in different feature files
 
   Scenario:
 

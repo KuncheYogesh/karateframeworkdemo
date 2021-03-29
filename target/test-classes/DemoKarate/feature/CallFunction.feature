@@ -1,7 +1,7 @@
 @ignore
 Feature: Call Function for Array list
 
-  Scenario: Call specific userDetails in array list
+  Scenario: CallFunction - Call specific userDetails in array list
 
     Given url 'https://reqres.in/api/users?page=2'
     When method GET

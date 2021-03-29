@@ -1,7 +1,7 @@
 @ignore
 Feature: Get incidents from ServiceNow page
 
-  Scenario: Incidents using GET call
+  Scenario: GetIncidentsServiceNow - Incidents using GET call
 
     Given url 'https://dev104182.service-now.com/'
     And header Authorization = call read('basic-auth.js') { username: 'admin', password: '4MmKydVbL6Hs' }

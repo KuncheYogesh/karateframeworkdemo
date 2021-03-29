@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: DemoKarate/feature/FetchAuthentication.feature</title>
+<title>Cucumber Reports  - Feature: DemoKarate/feature/UserDetailsPost.feature</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Karate_Intellij</td>
-      <td>06 Jan 2021, 13:20</td>
+      <td>29 Mar 2021, 15:08</td>
     </tr>
   </tbody>
 </table>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">DemoKarate/feature/FetchAuthentication.feature</td>
-          <td      class="passed"    >18</td>
+          <td class="tagname">DemoKarate/feature/UserDetailsPost.feature</td>
+          <td      class="passed"    >8</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">18</td>
+          <td class="total">8</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="3843839047">3.843</td>
+          <td class="duration" data-value="6610004629">6.610</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,12 +173,12 @@ $(document).ready(function() {
 
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">DemoKarate/feature/FetchAuthentication.feature</span>
+  <span class="name">DemoKarate/feature/UserDetailsPost.feature</span>
 
 
 </div>
 
-        <div class="description indention">Fetch Authentication Token</div>
+        <div class="description indention">UserDetailsPost - Post user details</div>
 
         <div class="elements inner-level">
 
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">3.262</span>
+  <span class="lead-duration duration">0.009</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -230,63 +230,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def Authentication = call read('UserDetailsAuthentication.feature')</span>
+  <span class="name">def requestpayload = read('../utils/Userdetails.json')</span>
 
-  <span class="lead-duration duration">1.635</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name- passed">
-  <span class="keyword indention"></span>
-  <span class="name">DemoKarate/feature/UserDetailsAuthentication.feature</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">url 'https://reqres.in/api/register'</span>
-
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -304,257 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>13:20:18.134 Testsuite executed in Environment</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">form field email = 'eve.holt@reqres.in',</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">form field password = 'pistol'</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; When passed">
-  <span class="keyword indention">&gt; When</span>
-  <span class="name">method post</span>
-
-  <span class="lead-duration duration">1.560</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>13:20:18.858 request:
-1 &gt; POST https://reqres.in/api/register
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 42
-1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
-email=eve.holt%40reqres.in&amp;password=pistol
-
-13:20:19.818 response time in milliseconds: 958.98
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 60d3d8ea3df81ac0-SIN
-1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 36
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Wed, 06 Jan 2021 07:50:18 GMT
-1 &lt; Etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
-1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=snP66oZVFDGSyatCYvZyokoEyBcYYEQ2HJ19Rp21JCc0O2zCDHL%2BnhnP4aq6v6xWwCUStKLL%2Bsz9WsZevAQn1xnE45zpV0HTwG4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dd82b49b9d921eabe4b5c2f772790b6f91609919417; expires=Fri, 05-Feb-21 07:50:17 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 077845e66600001ac03b2be000000001
-{&quot;id&quot;:4,&quot;token&quot;:&quot;QpwL5tke4Pnpja7X4&quot;}</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">status 200</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">print 'Token Id is', response</span>
-
-  <span class="lead-duration duration">0.012</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>13:20:19.832 [print] Token Id is {
-  &quot;id&quot;: 4,
-  &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
-}</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def accessToken = response.token</span>
-
-  <span class="lead-duration duration">0.007</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">print 'Access Token is',accessToken</span>
-
-  <span class="lead-duration duration">0.008</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>13:20:19.849 [print] Access Token is QpwL5tke4Pnpja7X4</pre>
+        <pre>15:08:46.589 Testsuite executed in Environment</pre>
       </div>
     </div>
   </div>
@@ -571,36 +267,9 @@ email=eve.holt%40reqres.in&amp;password=pistol
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def authToken = Authentication.accessToken</span>
+  <span class="name">header Content-Type = 'application/json'</span>
 
-  <span class="lead-duration duration">0.015</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def requestpayload = read('../utils/Userdetails.json')</span>
-
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -638,14 +307,14 @@ email=eve.holt%40reqres.in&amp;password=pistol
 </div>
 
 
-  <span class="lead-duration duration">0.581</span>
+  <span class="lead-duration duration">6.600</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Post call with Authentication</span>
+  <span class="name">Post UserDetails to fetch ID's</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -654,14 +323,14 @@ email=eve.holt%40reqres.in&amp;password=pistol
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-4" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -673,42 +342,15 @@ email=eve.holt%40reqres.in&amp;password=pistol
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
   <span class="name">url 'https://reqres.in/api/users'</span>
 
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">header Authorization = authToken</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.019</span>
 
 </div>
 
@@ -758,11 +400,38 @@ email=eve.holt%40reqres.in&amp;password=pistol
       <div class="step">
 
 
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param delay = 5</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.571</span>
+  <span class="lead-duration duration">6.571</span>
 
 </div>
 
@@ -776,14 +445,13 @@ email=eve.holt%40reqres.in&amp;password=pistol
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Doc string</a>
       </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>13:20:19.883 request:
-1 &gt; POST https://reqres.in/api/users
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>15:08:47.368 request:
+1 &gt; POST https://reqres.in/api/users?delay=5
 1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Authorization: QpwL5tke4Pnpja7X4
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 36
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -791,25 +459,26 @@ email=eve.holt%40reqres.in&amp;password=pistol
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 {&quot;name&quot;:&quot;yogesh&quot;,&quot;job&quot;:&quot;Automation&quot;}
 
-13:20:20.447 response time in milliseconds: 562.20
+15:08:53.260 response time in milliseconds: 5891.84
 1 &lt; 201
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 60d3d8ee1b611744-SIN
+1 &lt; CF-RAY: 6378207c4ced1a15-SIN
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 86
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Wed, 06 Jan 2021 07:50:18 GMT
-1 &lt; Etag: W/&quot;56-FSUw8B4MrNsIG6plw5Huyu4oKlo&quot;
+1 &lt; Date: Mon, 29 Mar 2021 09:38:48 GMT
+1 &lt; Etag: W/&quot;56-s7fEEuYTOZjzxgzLX1h8U5AKg5M&quot;
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=CT38%2B%2BhsyA2VP9IMadNiAfeLOKP8GGP7x6Py7muiYRnlqX4r3hsut%2B9qozrWOw0EY3%2FeCCtxoCwLAo7rEwCxutzS%2BE3MdhpO%2Fe4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;max_age&quot;:604800,&quot;group&quot;:&quot;cf-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=%2F%2BYeDjGrd2trCicA3jiFHd6NnRISWFeVTM%2Bcy2Sl0dxkyrF1gHD84Uceu2IK0WdpQUWKg%2FktqvPA1X2vhNj2W4ERqSt7H%2B5K0xc%3D&quot;}]}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dc239dd9d643729c09d44eab91cb377061609919418; expires=Fri, 05-Feb-21 07:50:18 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Set-Cookie: __cfduid=d21da7dfe0421fa75ab27245e849f1b3a1617010723; expires=Wed, 28-Apr-21 09:38:43 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 077845e8d300001744d5b5f000000001
-{&quot;name&quot;:&quot;yogesh&quot;,&quot;job&quot;:&quot;Automation&quot;,&quot;id&quot;:&quot;906&quot;,&quot;createdAt&quot;:&quot;2021-01-06T07:50:18.877Z&quot;}</pre>
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+1 &lt; cf-request-id: 091ef2a1ac00001a15f3920000000001
+{&quot;name&quot;:&quot;yogesh&quot;,&quot;job&quot;:&quot;Automation&quot;,&quot;id&quot;:&quot;262&quot;,&quot;createdAt&quot;:&quot;2021-03-29T09:38:48.556Z&quot;}</pre>
       </div>
     </div>
   </div>
@@ -851,11 +520,11 @@ email=eve.holt%40reqres.in&amp;password=pistol
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print 'Authentication response', response</span>
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print 'Response ID', response</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -869,14 +538,14 @@ email=eve.holt%40reqres.in&amp;password=pistol
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
           <a>Doc string</a>
       </div>
-      <div id="msg-10" class="collapse collapsable-details">
-        <pre>13:20:20.457 [print] Authentication response {
-  &quot;createdAt&quot;: &quot;2021-01-06T07:50:18.877Z&quot;,
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:08:53.269 [print] Response ID {
+  &quot;createdAt&quot;: &quot;2021-03-29T09:38:48.556Z&quot;,
   &quot;name&quot;: &quot;yogesh&quot;,
-  &quot;id&quot;: &quot;906&quot;,
+  &quot;id&quot;: &quot;262&quot;,
   &quot;job&quot;: &quot;Automation&quot;
 }</pre>
       </div>

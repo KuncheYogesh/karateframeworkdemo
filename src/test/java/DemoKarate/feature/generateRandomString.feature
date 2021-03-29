@@ -3,7 +3,7 @@ Feature: Generate random string function
   Background:
     * header Content-Type = 'application/json'
 
-  Scenario: Using string in request
+  Scenario: GenerateRandomString - Using string in request
     * def random_string =
     """
     function(s) {

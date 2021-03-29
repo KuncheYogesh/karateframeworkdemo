@@ -1,5 +1,5 @@
-<testsuite failures="0" name="DemoKarate/feature/UserDetailsPost.feature" skipped="0" tests="1" time="5.594232">
-  <testcase classname="DemoKarate.feature.UserDetailsPost" name="Post UserDetails to fetch ID's" time="5.594232">
+<testsuite failures="0" name="DemoKarate/feature/UserDetailsPost.feature" skipped="0" tests="1" time="6.610005">
+  <testcase classname="DemoKarate.feature.UserDetailsPost" name="Post UserDetails to fetch ID's" time="6.610005">
     <system-out>* def requestpayload = read('../utils/Userdetails.json') .................. passed
 * header Content-Type = 'application/json' ................................ passed
 Given url 'https://reqres.in/api/users' ................................... passed

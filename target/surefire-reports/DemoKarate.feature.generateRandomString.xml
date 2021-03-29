@@ -1,5 +1,5 @@
-<testsuite failures="0" name="DemoKarate/feature/generateRandomString.feature" skipped="0" tests="1" time="3.638338">
-  <testcase classname="DemoKarate.feature.generateRandomString" name="Using string in request" time="3.638338">
+<testsuite failures="0" name="DemoKarate/feature/generateRandomString.feature" skipped="0" tests="1" time="3.615169">
+  <testcase classname="DemoKarate.feature.generateRandomString" name="GenerateRandomString - Using string in request" time="3.615169">
     <system-out>* header Content-Type = 'application/json' ................................ passed
 * def random_string = ..................................................... passed
 * def string =  random_string(5) .......................................... passed

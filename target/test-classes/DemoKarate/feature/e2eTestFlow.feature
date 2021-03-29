@@ -1,4 +1,4 @@
-
+@ignore
 Feature: E2E test flow of user details
 
   Background:
@@ -6,7 +6,7 @@ Feature: E2E test flow of user details
     * def requestpayload = read('../utils/Userdetails.json')
     * header Content-Type = 'application/json'
 
-  Scenario: User details
+  Scenario: E2ETestFlow - User details
 
     Given path '/api/users'
     And param page = '2'
